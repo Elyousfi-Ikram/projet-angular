@@ -1,0 +1,123 @@
+<div class="kit container py-5" *ngIf="kit">
+  <button class="btn-return d-flex align-items-center gap-2 ms-4 mb-4" (click)="navigateBack()">
+    <i class="fa-solid fa-arrow-left"></i>
+    <span>Retour</span>
+  </button>
+
+  <div *ngIf="message" class="alert alert-success text-center">{{ message }}</div>
+
+  <section class="row d-flex align-items-center justify-content-center mb-5">
+    <div class="carousel col-6 position-relative d-flex justify-content-center align-items-center mb-5">
+      <button class="btn-left position-absolute start-0" (click)="changeImage('prev')" aria-label="Image précédente">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <button class="btn-right position-absolute end-0" (click)="changeImage('next')" aria-label="Image suivante">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <div class="carousel-indicators">
+        <button *ngFor="let _ of images; let i = index" type="button" data-bs-target="#demo" [attr.data-bs-slide-to]="i"
+          [class.active]="currentIndex === i"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div *ngFor="let image of images; let i = index" class="carousel-item" [class.active]="currentIndex === i">
+          <img [src]="image" alt="Photo du produit {{kit.title}}" class="d-block"
+            style="width:100%; max-height: 250px; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 ">
+      <div class="product-header mb-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <h1 class="title mb-0">{{ kit.title }}</h1>
+          <button class="btn-favoris" (click)="handleAddToFavoris()">
+            <i class="icon-add-favoris fa-regular fa-heart fs-4"></i>
+          </button>
+        </div>
+        <p class="fw-bold">{{ kit.price }}</p>
+      </div>
+      <p class="text-justify mb-5">{{ kit.description }}</p>
+
+      <div class="d-flex justify-content-center">
+        <div class="cart-button-container position-relative w-75">
+          <button class="btn-add w-100" (click)="handleAddToCart()">
+            Ajouter au panier
+          </button>
+          <div *ngIf="message" class="alert alert-success position-absolute top-100 start-50 translate-middle-x mt-2">
+            {{ message }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container mt-3" *ngIf="kit">
+    <div id="accordion">
+      <div class="card mb-4" *ngFor="let section of ['kit', 'choices', 'advice', 'create']">
+        <div class="card-header d-flex justify-content-between align-items-center"
+          *ngIf="kit.extrainfos[section]?.content">
+          <a class="btn-collapse w-100 text-start fs-4" data-bs-toggle="collapse" [attr.href]="'#' + section">
+            {{ kit.extrainfos[section]?.title || getDefaultTitle(section) }}
+          </a>
+          <i class="fa-solid fa-chevron-down fs-4"></i>
+        </div>
+
+        <div [id]="section" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            <ul *ngIf="kit.extrainfos[section]?.content">
+              <li class="list-group-item py-2" *ngFor="let item of kit.extrainfos[section]?.content">
+                <ng-container *ngIf="section !== 'create'; else createTemplate">
+                  <strong *ngIf="item?.name">{{ item?.name }} :</strong>
+                  <span *ngIf="!item?.name"></span>
+                  {{ item?.description }}
+                </ng-container>
+                <ng-template #createTemplate>
+                  {{ item }}
+                </ng-template>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <a class="collapsed btn-collapse w-100 text-start fs-4" data-bs-toggle="collapse" href="#collapseFive">
+          Avis clients
+        </a>
+        <i class="fa-solid fa-chevron-down fs-4"></i>
+      </div>
+
+      <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          <div class="reviews-container d-flex flex-wrap gap-5">
+            <div *ngFor="let review of kit.avis" class="review-card border rounded p-3 m-2" style="flex: 0 0 auto;">
+              <div class="review-header d-flex align-items-center mb-2">
+                <div class="avatar text-white rounded-circle d-flex justify-content-center align-items-center me-3"
+                  style="width: 40px; height: 40px;">
+                  {{ review.name ? review.name.charAt(0) : '' }}{{ review.name ? review.name.split('
+                  ')[1]?.charAt(0) : ''
+                  }}
+                </div>
+                <div class="review-info">
+                  <div class="reviewer-name fw-bold">{{ review.name }}</div>
+                  <div class="stars text-warning">
+                    <ng-container *ngFor="let star of [1, 2, 3, 4, 5]">
+                      <i class="fa-solid fa-star" *ngIf="review.note >= star"></i>
+                      <i class="fa-regular fa-star" *ngIf="review.note < star"></i>
+                    </ng-container>
+                  </div>
+                </div>
+              </div>
+              <p class="review-comment fst-italic">"{{ review.commentaire }}"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

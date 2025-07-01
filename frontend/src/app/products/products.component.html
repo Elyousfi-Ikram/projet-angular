@@ -1,0 +1,30 @@
+<div class="products-container">
+    <button class="btn-return d-flex align-items-center gap-2 ms-4 mb-4" (click)="navigateBack()">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Retour</span>
+      </button>
+    <h1 class="products-title py-5">Nos Produits</h1>
+
+    <div class="category-buttons mb-4 d-flex flex-wrap gap-2 justify-content-center">
+        <button *ngFor="let cat of categories" (click)="setSelectedCategory(cat)"
+            [ngClass]="{'btn-filtre': true, 'active': selectedCategory === cat}">
+            <span class="span-add">{{ cat }}</span>
+        </button>
+    </div>
+
+    <div class="products-grid mx-5 gap-5">
+        <div class="product-item" *ngFor="let product of filteredProducts">
+            <div class="product-card">
+                <a [routerLink]="['/product-detail', product.id]" class="product-link">
+                    <div class="product-image-container">
+                        <img [src]="product.img" [alt]="product.product" class="product-image" />
+                        <div class="product-description-overlay">
+                            <p>{{ product.description }}</p>
+                        </div>
+                    </div>
+                    <h5 class="product-name text-center">{{ product.product }}</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

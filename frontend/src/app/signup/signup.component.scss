@@ -1,0 +1,32 @@
+form input:focus {
+    border-color: #9F733C !important;
+    box-shadow: 0 0 0 0.2rem rgba(159, 115, 60, 0.25);
+  }
+  
+  .btn-signin {
+    background-color: #9F733C;
+    border-color: #9F733C;
+    color: white;
+  
+    &:hover {
+      color: white;
+    }
+  }
+  
+  .form-label,
+  .link-login {
+    color: #9F733C;
+  }
+  
+  .link-login:hover {
+    color: #9F733C;
+  }
+  
+  .min-vh-100 {
+    min-height: 87vh !important;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    box-shadow: none;
+  }

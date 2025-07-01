@@ -1,0 +1,119 @@
+<div class="container py-5">
+  <!-- Bouton Retour -->
+  <button class="btn-return d-flex align-items-center gap-2 ms-4 mb-4" (click)="navigateBack()">
+    <i class="fa-solid fa-arrow-left"></i>
+    <span>Retour</span>
+  </button>
+
+  <!-- Section Détails Produit -->
+  <section class="row align-items-center mb-5" *ngIf="product">
+    <div class="col-md-6 text-center">
+      <img class="img-fluid img_product" [src]="product.img" [alt]="product.product" />
+    </div>
+
+    <div class="col-md-6">
+      <div class="mb-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <h1 class="h2 mb-0">{{ product.product }}</h1>
+          <button class="btn-favoris" (click)="handleAddToFavoris()">
+            <i class="icon-add-favoris fa-regular fa-heart fs-4"></i>
+          </button>
+        </div>
+        <p class="text-muted">Marque : {{ product.marque }}</p>
+      </div>
+
+      <p class="mb-4">{{ product.description }}</p>
+
+      <!-- Sélection et Quantité -->
+      <div class="mb-4">
+        <div class="d-flex flex-row justify-content-start align-items-start gap-3">
+          <select [(ngModel)]="selectedQuantity.size" (change)="handleQuantityChange($event)"
+            class="form-select w-75 mb-3">
+            <option *ngFor="let q of product.quantite" [value]="q.size">
+              {{ q.size }} - {{ q.price }}€
+            </option>
+          </select>
+          <div class="d-flex flex-column align-items-center ">
+            <div class="input-group">
+              <button class="btn btn-outline-secondary" (click)="handleDecrement()">-</button>
+              <span class="input-group-text">{{ quantity }}</span>
+              <button class="btn btn-outline-secondary" (click)="handleIncrement()">+</button>
+            </div>
+            <div *ngIf="selectedQuantity" class="mt-2 text-muted">
+              <em>Prix total : {{ (selectedQuantity.price * quantity) | number:'1.2-2' }}€</em>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons-container d-flex justify-content-center position-relative w-100">
+        <button class="btn-add w-75" (click)="handleAddToCart()">
+          Ajouter au panier
+        </button>
+        <div *ngIf="message" class="alert alert-success position-absolute top-100 start-50 translate-middle-x mt-2">
+          {{ message }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accordéon Caractéristiques -->
+  <div class="mt-3" *ngIf="product">
+    <div id="accordion">
+      <div class="card mb-4" *ngFor="let section of product.sections; let i = index">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <a class="btn-collapse w-100 text-start fs-4" data-bs-toggle="collapse" [attr.href]="'#section' + i">
+            {{ section.title }}
+          </a>
+          <i class="fa-solid fa-chevron-down fs-4"></i>
+        </div>
+        <div [id]="'section' + i" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            <!-- Affichage des listes classiques -->
+            <ul *ngIf="section.title !== 'Avis clients'">
+              <li class="list-group-item ps-4 py-2" *ngFor="let item of section.content">
+                <ng-container *ngIf="isObject(item); else simpleItem">
+                  <strong>{{ item.name }} : </strong>{{ item.description }}
+                </ng-container>
+                <ng-template #simpleItem>
+                  {{ item }}
+                </ng-template>
+              </li>
+            </ul>
+
+            <!-- Affichage des avis clients -->
+            <div *ngIf="section.title === 'Avis clients' && section.content && section.content.length"
+              class="reviews-container d-flex flex-wrap gap-5">
+              <div *ngFor="let review of section.content" class="review-card border rounded p-3 m-2"
+                style="flex: 0 0 auto;">
+                <div class="review-header d-flex align-items-center mb-2">
+                  <div class="avatar text-white rounded-circle d-flex justify-content-center align-items-center me-3"
+                    style="width: 40px; height: 40px;">
+                    {{ review.utilisateur.charAt(0) }}{{ review.utilisateur.split(' ')[1]?.charAt(0) || '' }}
+                  </div>
+                  <div class="review-info">
+                    <div class="reviewer-name fw-bold">{{ review.utilisateur }}</div>
+                    <div class="stars text-warning">
+                      <ng-container *ngFor="let star of [1, 2, 3, 4, 5]">
+                        <i class="fa-solid fa-star" *ngIf="review.note >= star"></i>
+                        <i class="fa-regular fa-star" *ngIf="review.note < star"></i>
+                      </ng-container>
+                    </div>
+                  </div>
+                </div>
+                <p class="review-comment fst-italic">"{{ review.commentaire }}"</p>
+              </div>
+            </div>
+            <div *ngIf="section.title === 'Caractéristiques'">
+              <ul>
+                <li class="ps-4" *ngFor="let key of objectKeys(section.content)">
+                  <strong>{{ key }} :</strong> {{ section.content[key] }}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="profil-container" *ngIf="user$ | async as user">
+  <aside class="sidebar">
+    <div class="user-greeting">
+      <div class="profile-header">
+        <div *ngIf="user$ | async as user">
+          <div class="user-info">
+            <h3>Bonjour, {{ user.prenom }} !</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li *ngFor="let tab of tabs" (click)="handleTabChange(tab.key)" [class.active]="activeTab === tab.key">
+          {{ tab.label }}
+        </li>
+      </ul>
+    </nav>
+    <button (click)="handleLogout()" class="logout-btn">Déconnexion</button>
+  </aside>
+
+  <main class="content">
+    <div *ngIf="temporaryMessage$ | async as message" class="notification">
+      {{ message }}
+    </div>
+
+    <div [ngSwitch]="activeTab">
+      <div *ngIf="activeTab === 'informations'" class="p-4">
+        <app-user-info [userData]="user$ | async"></app-user-info>
+      </div>
+      <app-address-form *ngSwitchCase="'adresses'"></app-address-form>
+      <app-payment-form *ngSwitchCase="'paiement'"></app-payment-form>
+    </div>
+  </main>
+</div>

@@ -1,0 +1,44 @@
+form input:focus {
+    border-color: #9F733C !important;
+    box-shadow: 0 0 0 0.2rem rgba(159, 115, 60, 0.25);
+  }
+  
+  .btn-primary {
+    background-color: #9F733C;
+    border-color: #9F733C;
+    color: white;
+  
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #9F733C;
+      border-color: #9F733C;
+      color: white;
+    }
+  }
+  
+  .link-forgot {
+    color: #9F733C;
+    text-decoration: none;
+  
+    &:hover {
+      color: #9F733C;
+    }
+  }
+  
+  .btn-return-signin {
+    background-color: transparent;
+    color: #9F733C;
+    border: none;
+    font-weight: 400;
+  }
+  
+  .btn-link {
+    color: #9F733C;
+    & :hover {
+      color: #9F733C;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  

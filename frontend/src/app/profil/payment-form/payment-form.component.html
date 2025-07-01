@@ -1,0 +1,298 @@
+<div class="payments">
+  <h2 class="mb-4">Mes moyens de paiement</h2>
+
+  <div *ngIf="paymentMethods$ | async as paymentMethods; else loading">
+    <div class="payment-list mb-4">
+      <div *ngIf="paymentMethods.length === 0">
+        <p>Vous n'avez pas encore enregistré de moyen de paiement.</p>
+      </div>
+
+      <div *ngFor="let payment of paymentMethods; trackBy: trackByPaymentId" class="payment-card p-4 border rounded mb-3">
+        <div class="d-flex justify-content-between">
+          <div class="payment-details">
+            <p class="mb-1"><span class="badge">{{ getCardTypeLabel(payment.cardType) }}</span></p>
+            
+            <!-- Affichage pour les cartes de crédit -->
+            <div *ngIf="['visa', 'mastercard', 'amex'].includes(payment.cardType)">
+              <p class="mb-1"><strong>{{ payment.cardholderName }}</strong></p>
+              <p class="mb-1">{{ payment.cardNumber || '**** **** **** ****' }}</p>
+              <p class="mb-0">{{ payment.expiryMonth }}/{{ payment.expiryYear }}</p>
+            </div>
+            
+            <!-- Affichage pour PayPal -->
+            <div *ngIf="payment.cardType === 'paypal'">
+              <p class="mb-1"><strong>{{ payment.paypalName }}</strong></p>
+              <p class="mb-0">{{ payment.paypalEmail }}</p>
+            </div>
+            
+            <!-- Affichage pour Apple Pay -->
+            <div *ngIf="payment.cardType === 'applepay'">
+              <p class="mb-1"><strong>{{ payment.applePayName }}</strong></p>
+              <p class="mb-0">Appareil: {{ payment.applePayDeviceId }}</p>
+            </div>
+          </div>
+          <div class="payment-actions">
+            <button class="btn" (click)="onDelete(payment._id)" [disabled]="!payment._id">
+              <i class="bi bi-trash icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn-add d-flex align-items-center gap-4" (click)="openModal()">
+      <i class="bi bi-plus-circle icon"></i> Ajouter un moyen de paiement
+    </button>
+  </div>
+
+  <ng-template #loading>
+    <div class="text-center py-4">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Chargement...</span>
+      </div>
+    </div>
+  </ng-template>
+
+  <!-- Modale pour l'ajout uniquement -->
+  <div *ngIf="isModalOpen" class="modal-overlay">
+    <div class="modal-content p-4 rounded shadow">
+      <form [formGroup]="paymentForm" (ngSubmit)="onSubmit()">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2>Ajouter un moyen de paiement</h2>
+          <button type="button" class="btn-close" (click)="closeModal()"></button>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Type de paiement</label>
+          <select formControlName="cardType" class="form-control">
+            <option value="">Sélectionner le type de paiement</option>
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="amex">American Express</option>
+            <option value="paypal">PayPal</option>
+            <option value="applepay">Apple Pay</option>
+          </select>
+          <div *ngIf="paymentForm.controls['cardType'].invalid && paymentForm.controls['cardType'].touched"
+            class="error-message">
+            Le type de paiement est requis.
+          </div>
+        </div>
+
+        <!-- Champs pour les cartes de crédit -->
+        <div *ngIf="['visa', 'mastercard', 'amex'].includes(selectedPaymentType)">
+          <div class="mb-3">
+            <label class="form-label">Nom du titulaire</label>
+            <input formControlName="cardholderName" type="text" class="form-control">
+            <div *ngIf="paymentForm.controls['cardholderName'].invalid && paymentForm.controls['cardholderName'].touched"
+              class="error-message">
+              Le nom du titulaire est requis.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Numéro de carte</label>
+            <input 
+              formControlName="cardNumber" 
+              type="text" 
+              placeholder="1234567890123456" 
+              class="form-control"
+              maxlength="16">
+            <div *ngIf="paymentForm.controls['cardNumber'].invalid && paymentForm.controls['cardNumber'].touched"
+              class="error-message">
+              Un numéro de carte valide à 16 chiffres est requis.
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Mois d'expiration</label>
+              <input 
+                formControlName="expiryMonth" 
+                type="text" 
+                placeholder="MM" 
+                class="form-control"
+                maxlength="2">
+              <div *ngIf="paymentForm.controls['expiryMonth'].invalid && paymentForm.controls['expiryMonth'].touched"
+                class="error-message">
+                Mois valide requis (01-12).
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Année d'expiration</label>
+              <input 
+                formControlName="expiryYear" 
+                type="text" 
+                placeholder="YY" 
+                class="form-control"
+                maxlength="2">
+              <div *ngIf="paymentForm.controls['expiryYear'].invalid && paymentForm.controls['expiryYear'].touched"
+                class="error-message">
+                Année valide requise (YY).
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Champs pour PayPal -->
+        <div *ngIf="selectedPaymentType === 'paypal'">
+          <div class="mb-3">
+            <label class="form-label">Nom PayPal</label>
+            <input 
+              formControlName="paypalName" 
+              type="text" 
+              placeholder="Votre nom PayPal" 
+              class="form-control">
+            <div *ngIf="paymentForm.controls['paypalName'].invalid && paymentForm.controls['paypalName'].touched"
+              class="error-message">
+              Le nom PayPal est requis.
+            </div>
+          </div>
+          
+          <div class="mb-3">
+            <label class="form-label">Email PayPal</label>
+            <input 
+              formControlName="paypalEmail" 
+              type="email" 
+              placeholder="votre-email@example.com" 
+              class="form-control">
+            <div *ngIf="paymentForm.controls['paypalEmail'].invalid && paymentForm.controls['paypalEmail'].touched"
+              class="error-message">
+              Un email PayPal valide est requis.
+            </div>
+          </div>
+
+          <!-- Section Import depuis PayPal -->
+          <div class="mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <label class="form-label mb-0">Import depuis PayPal</label>
+              <button 
+                type="button" 
+                class="btn btn-outline-primary btn-sm"
+                (click)="renderPayPalButton()"
+                [disabled]="!isPayPalLoaded">
+                <i class="bi bi-paypal"></i> Connecter PayPal
+              </button>
+            </div>
+            
+            <div *ngIf="!isPayPalLoaded" class="alert alert-info small">
+              <i class="bi bi-info-circle"></i>
+              Chargement du SDK PayPal...
+            </div>
+            
+            <!-- Conteneur pour le bouton PayPal -->
+            <div id="paypal-button-container" class="mt-2"></div>
+            
+            <small class="text-muted">
+              <i class="bi bi-info-circle"></i> 
+              Cliquez sur le bouton PayPal pour importer automatiquement vos informations
+            </small>
+          </div>
+        </div>
+
+        <!-- Champs pour Apple Pay -->
+        <div *ngIf="selectedPaymentType === 'applepay'">
+          <div class="mb-3">
+            <label class="form-label">Nom Apple Pay</label>
+            <input 
+              formControlName="applePayName" 
+              type="text" 
+              placeholder="Votre nom Apple Pay" 
+              class="form-control"
+              (input)="hideQRCode()">
+            <div *ngIf="paymentForm.controls['applePayName'].invalid && paymentForm.controls['applePayName'].touched"
+              class="error-message">
+              Le nom Apple Pay est requis.
+            </div>
+          </div>
+          
+          <div class="mb-3">
+            <label class="form-label">Nom de l'appareil Apple</label>
+            <input 
+              formControlName="applePayDeviceId" 
+              type="text" 
+              placeholder="Nom de votre appareil Apple" 
+              class="form-control"
+              (input)="hideQRCode()">
+            <div *ngIf="paymentForm.controls['applePayDeviceId'].invalid && paymentForm.controls['applePayDeviceId'].touched"
+              class="error-message">
+              Le nom de l'appareil Apple Pay est requis.
+            </div>
+          </div>
+
+          <!-- Section Import depuis Apple Pay -->
+          <div class="mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <label class="form-label mb-0">Import depuis Apple Pay</label>
+              <div class="btn-group" role="group">
+                <button 
+                  type="button" 
+                  class="btn btn-outline-success btn-sm"
+                  (click)="importFromApplePay()"
+                  [disabled]="!isApplePayAvailable">
+                  <i class="bi bi-download"></i> Importer depuis Wallet
+                </button>
+                <button 
+                  type="button" 
+                  class="btn btn-outline-primary btn-sm"
+                  (click)="generateApplePayQRCode()"
+                  [disabled]="!paymentForm.get('applePayName')?.value || !paymentForm.get('applePayDeviceId')?.value">
+                  <i class="bi bi-qr-code"></i> QR Code
+                </button>
+              </div>
+            </div>
+            
+            <div *ngIf="!isApplePayAvailable" class="alert alert-warning small">
+              <i class="bi bi-exclamation-triangle"></i>
+              Apple Pay n'est pas disponible sur cet appareil
+            </div>
+            
+            <!-- Section QR Code -->
+            <div class="mb-3">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <label class="form-label mb-0">Configuration rapide</label>
+                <button 
+                  type="button" 
+                  class="btn btn-outline-primary btn-sm"
+                  (click)="generateApplePayQRCode()"
+                  [disabled]="!paymentForm.get('applePayName')?.value || !paymentForm.get('applePayDeviceId')?.value">
+                  <i class="bi bi-qr-code"></i> Générer QR Code
+                </button>
+              </div>
+              
+              <div *ngIf="showQRCode" class="qr-code-container text-center p-3 border rounded bg-light">
+                <p class="mb-2 text-muted small">
+                  <i class="bi bi-phone"></i> 
+                  Scannez avec votre iPhone pour ouvrir Apple Pay directement
+                </p>
+                <img [src]="qrCodeDataURL" alt="QR Code Apple Pay" class="qr-code-image">
+                <div class="mt-2">
+                  <small class="text-success d-block mb-2">
+                    <i class="bi bi-check-circle"></i> 
+                    Ouvrira l'app Wallet automatiquement
+                  </small>
+                  <button type="button" class="btn btn-sm btn-secondary" (click)="hideQRCode()">
+                    <i class="bi bi-x"></i> Fermer
+                  </button>
+                </div>
+              </div>
+              
+              <small class="text-muted">
+                <i class="bi bi-info-circle"></i> 
+                Le QR code permet de transférer rapidement les informations vers votre iPhone
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-end gap-2 mt-4">
+          <button type="button" class="btn btn-secondary" (click)="closeModal()" [disabled]="isLoading">
+            Annuler
+          </button>
+          <button type="submit" class="btn btn-save" [disabled]="paymentForm.invalid || isLoading">
+            {{ isLoading ? 'Enregistrement...' : 'Enregistrer' }}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

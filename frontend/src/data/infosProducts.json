@@ -1,0 +1,1799 @@
+[
+    {
+        "id": 1,
+        "product": "Cire de soja en pastille",
+        "img": "/assets/all-products/cire-de-soja.jpg",
+        "marque": "Nature & Cie",
+        "category": "Bougie",
+        "description": "La cire de soja en pastilles est parfaite pour la création de bougies naturelles et artisanales. Avec son point de fusion doux et sa texture lisse, elle permet d'obtenir des bougies au rendu homogène et de belle qualité. Sa teinte naturellement blanche est idéale pour intégrer des colorants et révéler pleinement vos parfums. Issue de soja européen sans OGM, cette cire est une alternative écologique et durable. Sa forme en pastilles facilite grandement le dosage et la manipulation au quotidien.",
+        "slogan": "Créez des bougies naturelles avec une cire d'exception. La cire de soja en pastille vous garantit une combustion lente et homogène. Respectueuse de l'environnement, elle permet de révéler pleinement les couleurs et les parfums. L’alternative parfaite pour des créations artisanales de qualité.",
+        "quantite": [
+            {
+                "size": "75g",
+                "price": "2.99"
+            },
+            {
+                "size": "250g",
+                "price": "4.99"
+            },
+            {
+                "size": "500g",
+                "price": "6.99"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Origine": "Europe",
+                    "Certification": "Sans OGM, Vegan",
+                    "Forme": "Pastilles",
+                    "Point de fusion": "45-50°C",
+                    "Utilisation": "Fabrication de bougies moulées ou coulées",
+                    "Composition": "100% cire de soja"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Faire fondre la cire au bain-marie.",
+                    "Ajouter les colorants et parfums à environ 50°C.",
+                    "Verser dans un moule ou contenant adapté.",
+                    "Laisser refroidir 24h pour une solidification optimale."
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Livraison gratuite dès 50€",
+                    "Paiement sécurisé",
+                    "Retour sous 14 jours",
+                    "Produit écoresponsable"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Claire B.",
+                        "note": 5,
+                        "commentaire": "Parfaite pour mes bougies maison, fond très bien et retient bien les parfums !"
+                    },
+                    {
+                        "utilisateur": "Lucas M.",
+                        "note": 4,
+                        "commentaire": "Bonne qualité, livraison rapide. Se dose facilement."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "product": "Mèches en coton",
+        "img": "/assets/all-products/meche-en-coton.webp",
+        "marque": "EcoCraft",
+        "category": "Bougie",
+        "description": "Nos mèches 100 % coton sont spécialement conçues pour assurer une combustion stable, uniforme et sans fumée de vos bougies faites maison. Grâce à leur composition naturelle, elles garantissent une flamme propre et constante, idéale pour tous vos projets de création de bougies, que vous soyez débutant ou artisan confirmé.",
+        "slogan": "Pour une flamme stable et sans fumée. Nos mèches en coton sont conçues pour offrir une combustion uniforme, idéale pour vos bougies faites maison. Naturelles et efficaces, elles garantissent des bougies de haute qualité à chaque utilisation. Brillez sans souci avec nos mèches 100 % coton.",
+        "quantite": [
+            {
+                "size": "10cm",
+                "price": "2.00"
+            },
+            {
+                "size": "15cm",
+                "price": "2.50"
+            },
+            {
+                "size": "20cm",
+                "price": "3.00"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Composition": "100% coton naturel",
+                    "Longueurs disponibles": [
+                        "10cm",
+                        "15cm",
+                        "20cm"
+                    ],
+                    "Utilisation": "Bougies coulées, moulées et votives",
+                    "Sans plomb": true
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Couper à la taille du contenant +1cm.",
+                    "Fixer la base au fond du récipient.",
+                    "Maintenir droite avec un centreur pendant la coulée."
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Produit naturel",
+                    "Combustion propre",
+                    "Livraison rapide",
+                    "Retour sous 14 jours"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Manon R.",
+                        "note": 5,
+                        "commentaire": "Parfaites pour mes bougies DIY ! Combustion propre."
+                    },
+                    {
+                        "utilisateur": "Thierry L.",
+                        "note": 4,
+                        "commentaire": "Bonne qualité, s’allume bien, pas de fumée noire."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "product": "Huiles essentielles",
+        "img": "/assets/all-products/huiles-essentielles.webp",
+        "marque": "AromaLife",
+        "category": "Bougie",
+        "description": "Ajoutez une touche olfactive unique à vos bougies grâce à nos huiles essentielles naturelles. Issues de plantes rigoureusement sélectionnées, elles offrent des senteurs apaisantes, revigorantes ou gourmandes selon vos envies. Un moyen parfait d’apporter une dimension sensorielle supplémentaire à vos créations artisanales.",
+        "choise": [
+            "Huile essentielle Lavande vraie",
+            "Huile essentielle Orange douce",
+            "Huile essentielle Cèdre de l'Atlas",
+            "Huile essentielle Citronnelle de Java",
+            "Huile essentielle Ylang-Ylang complète"
+        ],
+        "slogan": "Transformez vos bougies en une expérience sensorielle unique. Nos huiles essentielles ajoutent une touche d’aromathérapie à vos créations.",
+        "quantite": [
+            {
+                "size": "10ml",
+                "price": "4.99"
+            },
+            {
+                "size": "30ml",
+                "price": "11.99"
+            },
+            {
+                "size": "50ml",
+                "price": "19.99"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Origine": "Distillation de plantes naturelles",
+                    "Qualite": "100% pure et naturelle",
+                    "Utilisation": "Ajout dans la cire à ~50°C"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Ajouter l’huile dans la cire tiédie à 50°C.",
+                    "Utiliser entre 6% à 10% du poids de la cire.",
+                    "Bien mélanger avant de couler."
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Aromathérapie",
+                    "100% naturelle",
+                    "Qualité supérieure",
+                    "Satisfait ou remboursé"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Sophie K.",
+                        "note": 5,
+                        "commentaire": "Les parfums sont puissants et naturels, je recommande !"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "product": "Colorants",
+        "img": "/assets/all-products/colorants.jpg",
+        "marque": "ColorMix",
+        "category": "Bougie",
+        "description": "Exprimez votre créativité avec nos colorants spécialement formulés pour les bougies. Faciles à doser et à mélanger, ils vous permettront d’obtenir des couleurs vibrantes, subtiles ou nuancées.",
+        "slogan": "Laissez libre cours à votre créativité avec nos colorants spécialement formulés pour bougies. Personnalisez vos bougies comme vous l’imaginez.",
+        "quantite": [
+            {
+                "size": "Rouge",
+                "price": "2.00"
+            },
+            {
+                "size": "Bleu",
+                "price": "2.50"
+            },
+            {
+                "size": "Vert",
+                "price": "2.50"
+            },
+            {
+                "size": "Jaune",
+                "price": "2.30"
+            },
+            {
+                "size": "Orange",
+                "price": "2.30"
+            },
+            {
+                "size": "Violet",
+                "price": "2.70"
+            },
+            {
+                "size": "Rose",
+                "price": "2.40"
+            },
+            {
+                "size": "Noir",
+                "price": "3.00"
+            },
+            {
+                "size": "Blanc (nacré)",
+                "price": "3.20"
+            },
+            {
+                "size": "Doré",
+                "price": "3.50"
+            },
+            {
+                "size": "Argenté",
+                "price": "3.50"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Formulation": "Spécial bougies",
+                    "Type": "Colorants solides",
+                    "Point fusion": "55-60°C",
+                    "Utilisation": "Ajouter en petite quantité dans la cire fondue"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Faire fondre avec la cire ou pré-diluer.",
+                    "Tester avec une petite quantité pour ajuster la teinte.",
+                    "Bien mélanger pour éviter les marbrures."
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Couleurs éclatantes",
+                    "Facile à doser",
+                    "Sans danger pour la combustion"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Julie T.",
+                        "note": 5,
+                        "commentaire": "Les couleurs sont magnifiques et tiennent très bien après refroidissement."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "product": "Contenants en verre",
+        "img": "/assets/all-products/contenants.jpg",
+        "marque": "Verra",
+        "category": "Bougie",
+        "description": "Apportez élégance et sécurité à vos créations grâce à nos contenants en verre épais et résistants à la chaleur.",
+        "slogan": "Élégance et sécurité réunies. Nos contenants en verre épais ajoutent une touche de raffinement à vos bougies.",
+        "quantite": [
+            {
+                "size": "100 ml",
+                "price": "1.50"
+            },
+            {
+                "size": "150 ml",
+                "price": "1.90"
+            },
+            {
+                "size": "200 ml",
+                "price": "2.30"
+            },
+            {
+                "size": "250 ml",
+                "price": "2.70"
+            },
+            {
+                "size": "300 ml",
+                "price": "3.10"
+            },
+            {
+                "size": "500 ml",
+                "price": "3.80"
+            },
+            {
+                "size": "750 ml",
+                "price": "4.50"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Materiau": "Verre épais résistant à la chaleur",
+                    "Forme": "Cylindrique",
+                    "Utilisation": "Bougies coulées",
+                    "Réutilisable": true
+                }
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Livraison gratuite dès 50€",
+                    "Paiement sécurisé",
+                    "Retour sous 14 jours"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Nicolas J.",
+                        "note": 5,
+                        "commentaire": "Très bonne qualité, résiste bien à la chaleur, design propre."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "product": "Centreur de mèche en bois",
+        "img": "/assets/all-products/batonnet.jpg",
+        "marque": "WoodCraft",
+        "category": "Bougie",
+        "description": "Obtenez une finition parfaite à chaque bougie avec notre centreur de mèche en bois. Pratique et simple d’utilisation.",
+        "slogan": "Assurez une mèche parfaitement centrée à chaque fois. Un outil simple, mais essentiel pour des créations réussies.",
+        "quantite": [
+            {
+                "size": "Lot de 10",
+                "price": "2.00"
+            },
+            {
+                "size": "Lot de 25",
+                "price": "4.50"
+            },
+            {
+                "size": "Lot de 50",
+                "price": "8.00"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Materiau": "Bois naturel",
+                    "Longueur": "10cm",
+                    "Usage": "Maintien de la mèche centrée"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Placer sur le haut du contenant après fixation de la mèche.",
+                    "Glisser la mèche dans la fente centrale.",
+                    "Retirer une fois la cire solidifiée."
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Facile à utiliser",
+                    "Réutilisable",
+                    "Finition professionnelle"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "product": "Thermomètre",
+        "img": "/assets/all-products/thermometre.png",
+        "marque": "ThermoFix",
+        "category": "Bougie",
+        "description": "Surveillez précisément la température de votre cire fondue avec notre thermomètre de précision. Un indispensable pour réussir toutes vos bougies maison.",
+        "slogan": "Le thermomètre de précision, l’outil indispensable pour des bougies parfaites.",
+        "quantite": [
+            {
+                "size": "1 pièce",
+                "price": "4.90"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Plage": "0°C à 200°C",
+                    "Type": "Analogique",
+                    "Lecture": "Rapide et précise",
+                    "Utilisation": "Surveillance de la température de fusion"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Plonger le thermomètre dans la cire pendant la fonte.",
+                    "Maintenir la température souhaitée (ex : 50-70°C selon cire)."
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Livraison gratuite dès 50€",
+                    "Paiement sécurisé",
+                    "Retour sous 14 jours"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Camille D.",
+                        "note": 5,
+                        "commentaire": "Très précis et facile à lire, un must-have."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "product": "Perles",
+        "img": "/assets/all-products/perles.jpg",
+        "marque": "Beadify",
+        "category": "Bijoux",
+        "description": "Apportez éclat et originalité à vos bijoux faits main avec nos perles de haute qualité. Disponibles dans de nombreux coloris et tailles, elles sont parfaites pour créer des bracelets, colliers ou boucles d’oreilles uniques. Leur finition soignée assure un rendu professionnel pour tous vos projets créatifs.",
+        "slogan": "Des perles éclatantes pour des créations exceptionnelles.",
+        "quantite": [
+            {
+                "size": "50 g",
+                "price": "3.50"
+            },
+            {
+                "size": "100 g",
+                "price": "6.00"
+            },
+            {
+                "size": "200 g",
+                "price": "10.00"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Matière": "Acrylique",
+                    "Formes": "Rondes, ovales, facettées",
+                    "Couleurs": "Multicolores",
+                    "Utilisation": "Bijoux, broderie décorative"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Utilisez du fil de nylon ou élastique selon le type de création.",
+                    "Combinez avec des breloques ou pendentifs pour plus de style."
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Expédition rapide",
+                    "Paiement sécurisé",
+                    "Service client disponible"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Emma L.",
+                        "note": 5,
+                        "commentaire": "Super qualité et très brillantes, je recommande !"
+                    },
+                    {
+                        "utilisateur": "Noah G.",
+                        "note": 4,
+                        "commentaire": "Bon rapport qualité/prix pour mes bracelets artisanaux."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "product": "Pendentifs & breloques",
+        "img": "/assets/all-products/pendentifs.jpg",
+        "marque": "Charmi",
+        "category": "Bijoux",
+        "description": "Ajoutez une touche personnelle et charmante à vos bijoux avec nos pendentifs et breloques variés.",
+        "slogan": "Des pendentifs et breloques pour ajouter du caractère à vos bijoux.",
+        "quantite": [
+            {
+                "size": "Lot de 10",
+                "price": "4.00"
+            },
+            {
+                "size": "Lot de 25",
+                "price": "8.50"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Matière": "Métal sans nickel",
+                    "Formes": "Cœurs, étoiles, animaux, lettres",
+                    "Couleurs": "Doré, argenté, bronze"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Associez à des chaînes ou fils pour un collier personnalisé.",
+                    "Parfaits pour bracelets DIY ou porte-clés."
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Retour gratuit 14 jours",
+                    "Sélection artisanale"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Léa P.",
+                        "note": 5,
+                        "commentaire": "Très mignons et faciles à intégrer dans mes créations."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "product": "Chaînes & fils",
+        "img": "/assets/all-products/chaines.jpg",
+        "marque": "Linky",
+        "category": "Bijoux",
+        "description": "Chaînes et fils robustes pour des bijoux durables et élégants.",
+        "slogan": "L’essentiel pour assembler vos bijoux avec style.",
+        "quantite": [
+            {
+                "size": "1 mètre",
+                "price": "1.80"
+            },
+            {
+                "size": "5 mètres",
+                "price": "7.50"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Matière": "Acier inoxydable, nylon, coton ciré",
+                    "Epaisseur": "0.5 à 2 mm",
+                    "Utilisation": "Assemblage de colliers, bracelets, pendentifs"
+                }
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Garantie satisfaction",
+                    "Large choix de couleurs"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Amélie T.",
+                        "note": 4,
+                        "commentaire": "Bonne qualité, souples mais résistants."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "product": "Fermoirs et anneaux",
+        "img": "/assets/all-products/fermoirs-anneaux.jpg",
+        "marque": "Clasp Co.",
+        "category": "Bijoux",
+        "description": "Finitions parfaites pour vos créations avec nos fermoirs et anneaux solides.",
+        "slogan": "Assurez une finition parfaite à vos bijoux.",
+        "quantite": [
+            {
+                "size": "Lot de 20 pièces",
+                "price": "3.00"
+            },
+            {
+                "size": "Lot de 50 pièces",
+                "price": "6.50"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Types": "Fermoir mousqueton, ressort, anneaux ouverts/fermés",
+                    "Matière": "Métal hypoallergénique",
+                    "Utilisation": "Colliers, bracelets, boucles d'oreilles"
+                }
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Inoxydables",
+                    "Longue durée de vie"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "product": "Pinces de bijouterie",
+        "img": "/assets/all-products/pinces.avif",
+        "marque": "GripTools",
+        "category": "Bijoux",
+        "description": "Pinces ergonomiques pour bijouterie fine.",
+        "slogan": "Travaillez vos bijoux avec précision.",
+        "quantite": [
+            {
+                "size": "1 pièce",
+                "price": "5.90"
+            },
+            {
+                "size": "Kit de 3",
+                "price": "14.00"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Types": "Plate, coupante, ronde",
+                    "Poignées": "Antidérapantes",
+                    "Utilisation": "Manipulation de fil, montage de fermoirs"
+                }
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Prise en main facile",
+                    "Outil de qualité"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "product": "Boîte de rangement compartimentée",
+        "img": "/assets/all-products/rangement.jpg",
+        "marque": "Organizo",
+        "category": "Bijoux",
+        "description": "Boîte pratique pour trier et stocker vos fournitures de création.",
+        "slogan": "Organisez vos créations avec style.",
+        "quantite": [
+            {
+                "size": "1 boîte",
+                "price": "4.80"
+            },
+            {
+                "size": "Lot de 2",
+                "price": "8.50"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Dimensions": "19 x 13 x 3 cm",
+                    "Matériau": "Plastique transparent",
+                    "Compartiments": "Réglables"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Idéal pour perles, breloques, outils fins.",
+                    "Empilable pour gagner de l’espace."
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Anti-poussière",
+                    "Facile à transporter"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "product": "Tissus pré-découpés",
+        "img": "/assets/all-products/tissus.webp",
+        "marque": "Couturéo",
+        "category": "Couture",
+        "description": "Tissus pré-découpés pour des créations express.",
+        "slogan": "Simplifiez vos projets de couture.",
+        "quantite": [
+            {
+                "size": "50x50 cm",
+                "price": "2.50"
+            },
+            {
+                "size": "50x100 cm",
+                "price": "4.00"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Matières": "Coton, lin, polyester",
+                    "Motifs": "Floraux, géométriques, unis",
+                    "Utilisation": "Accessoires, déco, vêtements"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": []
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Coupe nette",
+                    "Prêt à l'emploi"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Sophie R.",
+                        "note": 5,
+                        "commentaire": "Motifs très jolis, tissu agréable à travailler."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "product": "Fil à coudre",
+        "img": "/assets/all-products/fil-couture.jpg",
+        "marque": "Threadly",
+        "category": "Couture",
+        "description": "Fil à coudre solide et souple, disponible en plusieurs couleurs.",
+        "slogan": "Obtenez des coutures parfaites.",
+        "quantite": [
+            {
+                "size": "1 bobine (100 m)",
+                "price": "1.20"
+            },
+            {
+                "size": "Lot de 5 bobines",
+                "price": "5.50"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Matière": "Polyester",
+                    "Longueur": "100 m",
+                    "Utilisation": "Couture main ou machine"
+                }
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Couleurs résistantes",
+                    "Ne s’effiloche pas"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "product": "Aiguilles à coudre à la main",
+        "img": "/assets/all-products/aiguilles.jpg",
+        "marque": "Needly",
+        "category": "Couture",
+        "description": "Aiguilles fines et résistantes pour couture main.",
+        "slogan": "Cousez avec précision.",
+        "quantite": [
+            {
+                "size": "Lot de 10 aiguilles",
+                "price": "2.00"
+            },
+            {
+                "size": "Lot de 30 aiguilles",
+                "price": "4.50"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Matière": "Acier inoxydable",
+                    "Longueurs": "3 à 5 cm",
+                    "Utilisation": "Travaux fins, broderie"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": []
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Anti-corrosion",
+                    "Pointes fines"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "product": "Mini mètre ruban",
+        "img": "/assets/all-products/metre.jpg",
+        "marque": "MeasureX",
+        "category": "Couture",
+        "description": "Ruban de mesure compact pour couture et loisirs créatifs.",
+        "slogan": "Mesurez avec précision, chaque détail compte !",
+        "quantite": [
+            {
+                "size": "1 pièce",
+                "price": "2.00"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Longueur": "150 cm",
+                    "Format": "Rouleau rétractable",
+                    "Matériau": "Plastique souple",
+                    "Graduation": "cm et pouces"
+                }
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Format de poche",
+                    "Double graduation"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "product": "Épingles & épingles de sûreté",
+        "img": "/assets/all-products/epingles.jpg",
+        "marque": "PinKit",
+        "category": "Couture",
+        "description": "Maintenez vos tissus en place sans effort avec nos épingles de couture et épingles de sûreté de qualité. Robustes et faciles à utiliser, elles assurent un travail net et précis, tout en facilitant l'assemblage temporaire de vos projets avant couture définitive.",
+        "slogan": "Gardez vos créations bien en place avec les épingles PinKit. Robustes, faciles à utiliser et idéales pour toutes vos étapes de couture. Que ce soit pour un projet couture ou DIY, elles garantissent un assemblage précis et soigné. Plus de soucis de tissu qui glisse, travaillez en toute sérénité !",
+        "quantite": [
+            {
+                "size": "Lot de 50",
+                "price": "3.20"
+            },
+            {
+                "size": "Lot de 100",
+                "price": "5.80"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Materiau": "Acier inoxydable",
+                    "Longueur": "25 mm",
+                    "Fini": "Anti-rouille"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Utiliser pour fixer tissus sans déchirure",
+                    "Ne pas utiliser sur tissus très délicats"
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Livraison rapide",
+                    "Paiement sécurisé"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Marie L.",
+                        "note": 5,
+                        "commentaire": "Parfaites pour mes projets couture !"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "product": "Petite paire de ciseaux de précision",
+        "img": "/assets/all-products/ciseaux.jpg",
+        "marque": "CutPro",
+        "category": "Couture",
+        "description": "Pour des découpes nettes et sans effort, optez pour notre paire de ciseaux de précision. Idéale pour les tissus fins ou les travaux minutieux, elle garantit un travail propre et soigné. Un indispensable pour tous les passionnés de couture et de loisirs créatifs.",
+        "slogan": "Pour une coupe parfaite à chaque fois, choisissez les ciseaux CutPro. Leur précision exceptionnelle est idéale pour couper les tissus fins ou les détails minutieux. Ce petit bijou de précision deviendra rapidement votre meilleur allié pour vos travaux de couture et loisirs créatifs.",
+        "quantite": [
+            {
+                "size": "1 paire",
+                "price": "4.90"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Materiau": "Acier trempé",
+                    "Longueur": "15 cm",
+                    "Ergonomie": "Poignée antidérapante"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Utiliser pour tissus fins",
+                    "Entretenir avec une huile légère pour maintenir le tranchant"
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Qualité professionnelle",
+                    "Garantie 2 ans"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Alice R.",
+                        "note": 4,
+                        "commentaire": "Ciseaux précis mais un peu petits pour ma main."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "product": "Boutons",
+        "img": "/assets/all-products/boutons.jpg",
+        "marque": "Buttonly",
+        "category": "Couture",
+        "description": "Ajoutez la touche finale parfaite à vos vêtements ou accessoires grâce à notre collection variée de boutons. Disponibles dans de nombreux styles, tailles et couleurs, ils s’adaptent à toutes vos envies créatives, que ce soit pour la mode ou la décoration.",
+        "slogan": "Les boutons Buttonly ajoutent une touche finale parfaite à vos créations ! Disponibles en diverses tailles, couleurs et styles, ils s’adaptent à tous vos projets de couture et décoration. Que ce soit pour une pièce mode ou un projet décoratif, ils apporteront toujours une finition professionnelle et élégante.",
+        "quantite": [
+            {
+                "size": "Lot de 20",
+                "price": "2.50"
+            },
+            {
+                "size": "Lot de 50",
+                "price": "5.00"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Materiau": "Plastique de haute qualité",
+                    "Formes": "Ronds",
+                    "Variétés": "Diverses couleurs disponibles"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Choisir la taille adaptée en fonction du tissu",
+                    "Laver en machine à basse température pour préserver la couleur"
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Large choix",
+                    "Retour gratuit sous 30 jours"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Paul T.",
+                        "note": 5,
+                        "commentaire": "Parfaits pour mes vêtements et faciles à coudre."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "product": "Rubans",
+        "img": "/assets/all-products/rubans.jpg",
+        "marque": "Ribbonia",
+        "category": "Couture",
+        "description": "Personnalisez vos projets de couture et DIY avec nos rubans décoratifs de qualité supérieure. Disponibles en différents motifs et textures, ils sont parfaits pour sublimer vêtements, cadeaux, accessoires ou créations artisanales.",
+        "slogan": "Exprimez votre créativité avec les rubans Ribbonia ! Offrez à vos projets de couture et DIY une finition soignée grâce à notre sélection de rubans décoratifs. Disponibles en différentes couleurs et motifs, ces rubans sont parfaits pour sublimer tous vos accessoires, vêtements et créations personnelles.",
+        "quantite": [
+            {
+                "size": "1 mètre",
+                "price": "1.00"
+            },
+            {
+                "size": "5 mètres",
+                "price": "4.50"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Largeur": "2 cm",
+                    "Materiau": "Satin",
+                    "Longueur": "Variable selon le lot"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Utiliser pour habiller ou décorer vos créations",
+                    "Peut être repassé à basse température pour éliminer les plis"
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Satisfaction garantie",
+                    "Qualité supérieure"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Sophie M.",
+                        "note": 4,
+                        "commentaire": "Belle qualité, mais un peu cher par mètre."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "product": "Elastiques",
+        "img": "/assets/all-products/elastique.jpg",
+        "marque": "FlexLine",
+        "category": "Couture",
+        "description": "Apportez confort et souplesse à vos créations textiles grâce à nos élastiques robustes et résistants. Parfaits pour réaliser ceintures, poignets, masques ou tout projet nécessitant de la flexibilité sans compromis sur la qualité.",
+        "slogan": "Flexibilité et confort sont à portée de main avec les élastiques FlexLine. Parfaits pour vos projets de couture, ces élastiques résistants s'adaptent à vos besoins sans jamais compromettre la qualité. Créez ceintures, poignets et plus encore avec des matériaux qui garantissent durabilité et souplesse.",
+        "quantite": [
+            {
+                "size": "1 mètre",
+                "price": "1.50"
+            },
+            {
+                "size": "5 mètres",
+                "price": "6.00"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Materiau": "Latex naturel",
+                    "Elasticite": "Haute",
+                    "Resistance": "10 kg environ"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Utiliser pour ceintures, poignets et autres finitions",
+                    "Éviter d’étirer excessivement pour préserver l’élasticité"
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Séchage rapide",
+                    "Durabilité prouvée"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Julien G.",
+                        "note": 5,
+                        "commentaire": "Super stretch et résistant, parfait pour mes projets couture !"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "product": "Palette de peintures",
+        "img": "/assets/all-products/palette.jpg",
+        "marque": "Art&Co",
+        "category": "Peinture",
+        "description": "Exprimez toute votre créativité avec notre palette de peintures riche en couleurs vibrantes. Conçue pour les artistes débutants comme confirmés, elle est idéale pour les projets de peinture sur toile, papier, bois et bien plus encore.",
+        "slogan": "Libérez votre imagination avec la palette Art&Co ! Offrez à vos œuvres toute la couleur et la vibrance qu'elles méritent. Que vous soyez débutant ou confirmé, ces peintures riches en teintes sublimeront chacun de vos projets artistiques.",
+        "quantite": [
+            {
+                "size": "Palette 12 couleurs",
+                "price": "6.90"
+            },
+            {
+                "size": "Palette 24 couleurs",
+                "price": "11.50"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Nombre de couleurs": "12 ou 24",
+                    "Composition": "Acrylique",
+                    "Application": "Sur toile, papier ou bois"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Bien agiter avant usage",
+                    "Utiliser avec un médium spécifique pour optimiser les couleurs"
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Formule non toxique",
+                    "Testé par des artistes"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Emma L.",
+                        "note": 4,
+                        "commentaire": "Couleurs vives, mais elles sèchent rapidement."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "product": "Crayons à dessin & esquisse",
+        "img": "/assets/all-products/crayon.avif",
+        "marque": "SketchPro",
+        "category": "Peinture",
+        "description": "Affinez vos talents d'artiste avec nos crayons de dessin et d'esquisse de qualité professionnelle. Leur texture douce et leur précision exceptionnelle vous permettront de réaliser des œuvres détaillées, du croquis préparatoire aux réalisations les plus abouties.",
+        "slogan": "Donnez vie à vos esquisses avec les crayons SketchPro ! Leur texture douce et leur précision incroyable vous permettront de réaliser des dessins détaillés et soignés. Exprimez chaque nuance de votre talent avec ces outils de qualité.",
+        "quantite": [
+            {
+                "size": "Set de 6 crayons",
+                "price": "4.00"
+            },
+            {
+                "size": "Set de 12 crayons",
+                "price": "7.50"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Durete": "HB",
+                    "Nombre de crayons": "6 ou 12",
+                    "Composition": "Graphite de qualité"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Utiliser avec un estompe pour des dégradés subtils",
+                    "Conserver dans un étui sec pour éviter la casse"
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Précision assurée",
+                    "Idéal pour artistes"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Nicolas F.",
+                        "note": 5,
+                        "commentaire": "Parfaits pour des dessins détaillés et précis."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "product": "Pinceaux de qualité",
+        "img": "/assets/all-products/pinceaux.jpg",
+        "marque": "BrosseFine",
+        "category": "Peinture",
+        "description": "Travaillez avec finesse et fluidité grâce à nos pinceaux professionnels pour peinture. Leur qualité supérieure assure une excellente couverture et une belle maîtrise du geste pour vos créations artistiques, que ce soit à l'aquarelle, à l'acrylique ou à l'huile.",
+        "slogan": "Faites parler votre talent avec les pinceaux BrosseFine. Adaptés à toutes les techniques, ils vous offrent une maîtrise parfaite du geste pour des résultats impeccables. Chaque coup de pinceau devient une œuvre d’art.",
+        "quantite": [
+            {
+                "size": "Bloc A4 - 20 feuilles",
+                "price": "6.00"
+            },
+            {
+                "size": "Bloc A3 - 20 feuilles",
+                "price": "9.50"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Types": "Aquarelle, acrylique, huile",
+                    "Poils": "Naturels ou synthétiques",
+                    "Longueur": "Variable"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Nettoyer immédiatement après usage",
+                    "Utiliser un nettoyant spécifique pour préserver les poils"
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Qualité professionnelle",
+                    "Testé par des experts"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Laura K.",
+                        "note": 4,
+                        "commentaire": "Bon équilibre, mais nécessite un entretien régulier."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "product": "Bloc de papier spécial",
+        "img": "/assets/all-products/bloc.jpg",
+        "marque": "PapierArt",
+        "category": "Peinture",
+        "description": "Sublimez vos œuvres avec notre bloc de papier spécialement conçu pour la peinture aquarelle et autres techniques humides. Son grammage élevé et sa texture idéale garantissent une absorption parfaite des pigments sans gondoler, pour des résultats éclatants.",
+        "slogan": "Le papier de qualité supérieure pour des créations éclatantes ! Conçu spécialement pour techniques humides comme l'aquarelle, le bloc PapierArt garantit une absorption parfaite des pigments et une solidité optimale. Donnez une nouvelle dimension à vos œuvres.",
+        "quantite": [
+            {
+                "size": "Bloc A4 - 20 feuilles",
+                "price": "6.00"
+            },
+            {
+                "size": "Bloc A3 - 20 feuilles",
+                "price": "9.50"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Grammage": "200g/m²",
+                    "Taille": "A4 ou A3",
+                    "Texture": "Lisse et résistante"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Utiliser pour aquarelle ou techniques humides",
+                    "Ne pas utiliser pour impression laser"
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Papier de qualité supérieure",
+                    "Résistant à l'eau"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Caroline D.",
+                        "note": 5,
+                        "commentaire": "Le papier reste plat même après plusieurs lavages."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "product": "Palette de mélange",
+        "img": "/assets/all-products/palette-melange.jpg",
+        "marque": "MixArt",
+        "category": "Peinture",
+        "description": "Créez vos teintes personnalisées avec facilité grâce à notre palette de mélange robuste et pratique. Parfaite pour explorer de nouvelles harmonies de couleurs, elle vous permet de mixer vos peintures en toute simplicité.",
+        "slogan": "Mélangez vos couleurs et créez des œuvres uniques avec la palette MixArt. Robuste et pratique, cette palette vous offre la liberté de créer vos teintes personnalisées pour chaque projet artistique.",
+        "quantite": [
+            {
+                "size": "1 pièce",
+                "price": "2.50"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Dimensions": "Compacte",
+                    "Materiau": "Plastique robuste",
+                    "Usage": "Mélange de peintures"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Utiliser sur une surface plane",
+                    "Nettoyer soigneusement après usage"
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Design ergonomique",
+                    "Facile à nettoyer"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Mathieu P.",
+                        "note": 4,
+                        "commentaire": "Parfait pour mixer rapidement les couleurs."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "product": "Crayon gomme + taille-crayon",
+        "img": "/assets/all-products/crayon-gomme.jpg",
+        "marque": "Eraso",
+        "category": "Peinture",
+        "description": "Corrigez avec précision vos dessins grâce à notre crayon gomme ultra-efficace, accompagné de son taille-crayon intégré. Idéal pour affiner vos détails sans abîmer le support.",
+        "slogan": "Affinez vos détails et corrigez avec précision grâce au crayon gomme Eraso. Pratique et compact, c'est l'allié idéal pour peaufiner vos dessins et esquisses.",
+        "quantite": [
+            {
+                "size": "1 set (crayon gomme + taille-crayon)",
+                "price": "3.20"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Fonction": "Crayon 2-en-1",
+                    "Point": "Moyen",
+                    "Ergonomie": "Confortable et compact"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Utiliser pour des corrections rapides lors du dessin",
+                    "Renouveler la gomme si besoin"
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Multi-usage",
+                    "Compact et efficace"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Sophie W.",
+                        "note": 5,
+                        "commentaire": "Très pratique, toujours à portée de main pour mes esquisses."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "product": "Stylo noir finliner (waterproof)",
+        "img": "/assets/all-products/stylo-noir.jpg",
+        "marque": "Inka",
+        "category": "Peinture",
+        "description": "Donnez du caractère à vos esquisses et illustrations grâce à notre stylo noir finliner waterproof. Sa pointe fine et son encre résistante à l’eau garantissent des tracés nets, idéaux pour contours, lettrages et dessins de précision.",
+        "slogan": "Apportez finesse et clarté à vos créations avec le stylo Inka. Waterproof et à pointe fine, il est parfait pour des dessins techniques et des illustrations détaillées.",
+        "quantite": [
+            {
+                "size": "1 pièce",
+                "price": "2.80"
+            },
+            {
+                "size": "Lot de 3",
+                "price": "7.50"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Type": "Finliner waterproof",
+                    "Pointe": "Fine",
+                    "Encre": "Pigmentée et résistante à l'eau"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Idéal pour le dessin technique",
+                    "Laisser sécher quelques instants pour éviter les bavures"
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Résistance à l'eau",
+                    "Parfait pour illustrations détaillées"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Marc D.",
+                        "note": 4,
+                        "commentaire": "Encre de qualité, mais le flux peut varier selon les utilisations."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "product": "Base de savon naturelle",
+        "img": "/assets/all-products/base-savon.jpg",
+        "marque": "Savonia",
+        "category": "Savon",
+        "description": "Créez vos propres savons maison en toute simplicité avec notre base de savon naturelle. Douce pour la peau et facile à personnaliser avec huiles essentielles, colorants ou fleurs séchées, elle est idéale pour des créations uniques et respectueuses de votre peau.",
+        "slogan": "Créez des savons maison doux et personnalisés avec la base Savonia. Facile à utiliser et respectueuse de la peau, elle permet de réaliser des créations uniques et naturelles en toute simplicité.",
+        "quantite": [
+            {
+                "size": "500 g",
+                "price": "4.90"
+            },
+            {
+                "size": "1 kg",
+                "price": "8.90"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Composition": "Base à froid",
+                    "Couleur": "Blanc",
+                    "Texture": "Crémeuse"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Faire fondre au bain-marie",
+                    "Ajouter huiles essentielles après refroidissement"
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Naturelle",
+                    "Facile à personnaliser",
+                    "Testée dermatologiquement"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Isabelle G.",
+                        "note": 5,
+                        "commentaire": "Parfaite pour mes savons maison, facile à personnaliser."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "product": "Moules à savon en silicone",
+        "img": "/assets/all-products/moule.jpg",
+        "marque": "Silisav",
+        "category": "Savon",
+        "description": "Donnez libre cours à votre imagination grâce à nos moules à savon en silicone souples et résistants. Disponibles en différentes formes, ils permettent un démoulage facile et des créations originales pour offrir ou se faire plaisir.",
+        "slogan": "Libérez votre créativité avec les moules à savon Silisav. Leur flexibilité et résistance facilitent le démoulage et garantissent des créations originales et soignées.",
+        "quantite": [
+            {
+                "size": "Lot de 4 moules",
+                "price": "6.50"
+            },
+            {
+                "size": "Lot de 8 moules",
+                "price": "11.00"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Materiau": "Silicone de qualité alimentaire",
+                    "Forme": "Variée",
+                    "Résistance": "Haute"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Verser la base de savon légèrement refroidie",
+                    "Démouler délicatement une fois le savon solidifié"
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Flexible",
+                    "Sans BPA",
+                    "Facile à nettoyer"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Juliette F.",
+                        "note": 4,
+                        "commentaire": "Moules flexibles et faciles à démouler, j'adore !"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "product": "Colorants naturels",
+        "img": "/assets/all-products/colorants-naturels.jpg",
+        "marque": "BioColor",
+        "category": "Savon",
+        "description": "Apportez de la couleur à vos savons faits maison avec nos colorants naturels sûrs et faciles à utiliser. Conçus pour une utilisation cosmétique, ils offrent des teintes éclatantes tout en respectant la douceur de votre peau.",
+        "slogan": "Apportez de la couleur à vos savons maison avec les colorants BioColor. Naturels et sûrs, ils offrent des teintes éclatantes pour vos créations cosmétiques faites main.",
+        "quantite": [
+            {
+                "size": "Pack 3 couleurs",
+                "price": "5.00"
+            },
+            {
+                "size": "Pack 6 couleurs",
+                "price": "9.50"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Usage": "Cosmétique",
+                    "Couleurs": "3 ou 6 teintes",
+                    "Composition": "Ingrédients naturels"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Ajouter en petites quantités",
+                    "Bien mélanger pour une couleur uniforme"
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Naturel",
+                    "Sans allergènes",
+                    "Idéal pour peaux sensibles"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Victor H.",
+                        "note": 5,
+                        "commentaire": "Des couleurs éclatantes et faciles à doser."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 33,
+        "product": "Fleurs séchées décoratives",
+        "img": "/assets/all-products/fleurs.jpg",
+        "marque": "Floralie",
+        "category": "Savon",
+        "description": "Ajoutez une touche naturelle et esthétique à vos savons ou créations DIY avec nos fleurs séchées décoratives. Chaque pétale conserve sa beauté pour sublimer vos produits faits main et leur apporter une note authentique et délicate.",
+        "slogan": "Ajoutez une touche florale et délicate à vos créations DIY avec les fleurs séchées Floralie. Parfaites pour décorer vos savons faits maison, elles apportent authenticité et charme à chacun de vos projets.",
+        "quantite": [
+            {
+                "size": "Sachet 10 g",
+                "price": "2.00"
+            },
+            {
+                "size": "Sachet 25 g",
+                "price": "4.00"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Type": "Fleurs séchées",
+                    "Variété": "Mélange de roses, lavande, etc.",
+                    "Usage": "Décoration"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Ajouter après démoulage du savon ou projet DIY",
+                    "Conserver à l’abri de l’humidité pour préserver la couleur"
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Naturelles",
+                    "Design élégant",
+                    "Livraison rapide"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Amélie S.",
+                        "note": 4,
+                        "commentaire": "Belle touche décorative, mais attention à la décoloration en cas d’humidité."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 34,
+        "product": "Spatule en bois",
+        "img": "/assets/all-products/spatule.jpg",
+        "marque": "WoodMix",
+        "category": "Savon",
+        "description": "Mélangez vos ingrédients de manière naturelle et efficace avec notre spatule en bois. Robuste et agréable à utiliser, elle est parfaite pour préparer vos savons maison, crèmes ou tout projet DIY nécessitant un outil simple et fiable.",
+        "slogan": "Mélangez avec soin et simplicité grâce à la spatule en bois WoodMix. Cet outil pratique et naturel est indispensable pour vos préparations artisanales, offrant robustesse et design authentique.",
+        "quantite": [
+            {
+                "size": "1 pièce",
+                "price": "1.80"
+            },
+            {
+                "size": "Lot de 3",
+                "price": "4.80"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Caractéristiques",
+                "content": {
+                    "Materiau": "Bois naturel",
+                    "Taille": "Standard",
+                    "Usage": "Mélange et préparation"
+                }
+            },
+            {
+                "title": "Conseils d'utilisation",
+                "content": [
+                    "Utiliser pour mélanger savons, crèmes et préparations DIY",
+                    "Laver à la main pour préserver le bois"
+                ]
+            },
+            {
+                "title": "Badges reassurance",
+                "content": [
+                    "Écologique",
+                    "Design naturel",
+                    "Durable"
+                ]
+            },
+            {
+                "title": "Avis clients",
+                "content": [
+                    {
+                        "utilisateur": "Dominique P.",
+                        "note": 5,
+                        "commentaire": "Très robuste et agréable à utiliser, un outil indispensable !"
+                    }
+                ]
+            }
+        ]
+    }
+]

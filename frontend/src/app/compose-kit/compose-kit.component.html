@@ -1,0 +1,80 @@
+<div class="compose container py-5">
+  <h1 class="main-title text-center mb-5">
+    <span class="creative-text">Créez Votre Kit Unique</span>
+    <span class="subtitle d-block">Laissez libre cours à votre créativité !</span>
+  </h1>
+
+  <div class="row">
+    <!-- Colonne gauche - Sélection -->
+    <div class="col-md-6">
+      <div class="form-group mb-4">
+        <label for="categorieSelect" class="form-label">
+          Choisissez une catégorie :
+        </label>
+        <select
+          id="categorieSelect"
+          class="form-select"
+          [(ngModel)]="selectedCategorie"
+          (ngModelChange)="onCategoryChange($event)"
+        >
+          <option value="">Sélectionnez une catégorie</option>
+          <option *ngFor="let cat of categories" [value]="cat">{{cat}}</option>
+        </select>
+      </div>
+
+      <!-- Liste des produits -->
+      <div *ngIf="selectedCategorie" class="products-selection mt-4">
+        <h3 class="mb-3">
+          Produits disponibles
+          <small class="text-muted d-block fs-6">({{remainingProducts}} produits restants)</small>
+        </h3>
+        <div class="products-list">
+          <div *ngFor="let product of kitProducts; let i = index" class="form-check mb-3">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="product-{{i}}"
+              [checked]="isProductSelected(product.name)"
+              (change)="handleProductChange(product.name)"
+            />
+            <label class="form-check-label" for="product-{{i}}">
+              <strong>{{product.name}}</strong>
+              <p class="text-muted small mb-0">{{product.description}}</p>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Colonne droite - Résumé -->
+    <div class="col-md-6">
+      <div class="selected-products-container">
+        <h3 class="mb-4">
+          Votre sélection
+          <small class="text-muted d-block fs-6">({{selectedProducts.length}}/5 produits)</small>
+        </h3>
+
+        <ng-container *ngIf="selectedProducts.length > 0; else noProducts">
+          <ul class="list-group mb-4">
+            <li *ngFor="let product of selectedProducts; let i = index" class="list-group-item d-flex justify-content-between align-items-center">
+              {{product}}
+              <button class="btn btn-link text-danger" (click)="handleProductChange(product)">
+                <i class="bi bi-x-circle"></i>
+              </button>
+            </li>
+          </ul>
+          <div class="text-center">
+            <p class="price-info mb-3">Prix du kit personnalisé : 24.99€</p>
+            <button class="btn-valid" (click)="handleValidateComposition()">
+              Valider la composition
+            </button>
+          </div>
+        </ng-container>
+
+        <ng-template #noProducts>
+          <p class="text-muted text-center">Aucun produit sélectionné</p>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>

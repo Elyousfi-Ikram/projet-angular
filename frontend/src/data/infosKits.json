@@ -1,0 +1,702 @@
+[
+    {
+        "id": "1",
+        "title": "Kit DIY - Fabrication de Bougies Maison",
+        "categorie": "Bougie",
+        "cover": "/assets/bougies.png",
+        "img": [
+            "/assets/kit-bougies.jpg",
+            "/assets/all-products/cire-de-soja.jpg",
+            "/assets/all-products/meche-en-coton.webp",
+            "/assets/all-products/huiles-essentielles.webp",
+            "/assets/all-products/colorants.jpg",
+            "/assets/all-products/contenants.jpg",
+            "/assets/all-products/batonnet.jpg",
+            "/assets/all-products/thermometre.png"
+        ],
+        "description": "Créez vos propres bougies parfumées et personnalisées grâce à ce kit complet pour les amoureux du fait maison ! Parfait pour des moments de détente, offrir un cadeau unique ou simplement ajouter une touche artisanale à votre intérieur.",
+        "price": "29,90€ (livraison incluse)",
+        "extrainfos": {
+            "kit": {
+                "title": "Contenu du kit",
+                "content": [
+                    {
+                        "name": "Cire de soja (500g)",
+                        "description": "100% naturelle, biodégradable et sans produits chimiques. Idéale pour une combustion propre et prolongée."
+                    },
+                    {
+                        "name": "Mèches en coton (5 pièces)",
+                        "description": "Avec supports métalliques pour un maintien optimal. Adaptées à toutes sortes de contenants."
+                    },
+                    {
+                        "name": "Huiles essentielles (3 flacons de 10ml)",
+                        "description": "Offrez-vous une expérience sensorielle avec des parfums envoûtants comme la lavande, la vanille et l’orange douce."
+                    },
+                    {
+                        "name": "Colorants (2 pastilles)",
+                        "description": "Pour personnaliser vos bougies aux couleurs de vos envies."
+                    },
+                    {
+                        "name": "Contenants en verre (3 pots de 200 ml)",
+                        "description": "Des bocaux élégants, parfaits pour y verser votre cire fondue et créer une bougie durable."
+                    },
+                    {
+                        "name": "Bâtonnet en bois & centreur de mèche",
+                        "description": "Pour maintenir la mèche bien centrée pendant le refroidissement de la cire."
+                    },
+                    {
+                        "name": "Thermomètre",
+                        "description": "Précis et pratique pour vérifier la température de la cire avant de la verser dans le contenant."
+                    },
+                    {
+                        "name": "Notice détaillée & guide créatif",
+                        "description": "Un tutoriel simple et illustré, pour vous accompagner tout au long de votre expérience créative."
+                    }
+                ]
+            },
+            "choices": {
+                "title": "Pourquoi choisir notre kit ?",
+                "content": [
+                    {
+                        "name": "Complet et facile à utiliser",
+                        "description": "Idéal pour les débutants, chaque étape est expliquée en détail pour que vous puissiez réaliser des bougies parfaites."
+                    },
+                    {
+                        "name": "Respectueux de l'environnement",
+                        "description": "Nous privilégions des matériaux naturels et écologiques pour vous permettre de créer en toute sérénité."
+                    },
+                    {
+                        "name": "Personnalisable",
+                        "description": "Laissez libre cours à votre imagination pour choisir les couleurs et les parfums de vos bougies, pour qu'elles soient vraiment à votre image."
+                    },
+                    {
+                        "name": "Un cadeau original",
+                        "description": "Parfait pour les fêtes, anniversaires ou pour des activités créatives en famille."
+                    }
+                ]
+            },
+            "advice": {
+                "title": "Conseils d’utilisation",
+                "content": [
+                    {
+                        "name": "Préparez votre espace",
+                        "description": "Couvrez les surfaces de travail et assurez-vous d’avoir tous vos outils à portée de main."
+                    },
+                    {
+                        "name": "Faites fondre la cire",
+                        "description": "Utilisez un bain-marie ou une bouilloire spécifique pour fondre la cire à la température idéale."
+                    },
+                    {
+                        "name": "Ajoutez parfum et colorant",
+                        "description": "Mélangez bien une fois que la cire est fondue."
+                    },
+                    {
+                        "name": "Fixez la mèche et versez la cire",
+                        "description": "Maintenez la mèche centrée grâce au centreur."
+                    },
+                    {
+                        "name": "Laissez refroidir",
+                        "description": "Laissez vos bougies se solidifier pendant environ 2-3 heures avant de les utiliser."
+                    }
+                ]
+            }
+        },
+        "avis": [
+            {
+                "name": "Marie D.",
+                "note": 5,
+                "commentaire": "Kit très complet, les bougies sont magnifiques et sentent bon. La notice est claire."
+            },
+            {
+                "name": "Jean P.",
+                "note": 4,
+                "commentaire": "Très satisfait, juste un peu long pour la fonte de la cire."
+            },
+            {
+                "name": "Sophie L.",
+                "note": 5,
+                "commentaire": "Activité parfaite pour faire avec les enfants, résultat superbe !"
+            },
+            {
+                "name": "Thomas M.",
+                "note": 5,
+                "commentaire": "Cadeau original très apprécié, la qualité des produits est au rendez-vous."
+            },
+            {
+                "name": "Emma K.",
+                "note": 4,
+                "commentaire": "Belle expérience créative, juste besoin de plus de colorants."
+            },
+            {
+                "name": "Lucas B.",
+                "note": 5,
+                "commentaire": "Parfait pour débuter, résultat professionnel avec un peu de patience."
+            },
+            {
+                "name": "Clara N.",
+                "note": 5,
+                "commentaire": "Les bougies durent longtemps et les parfums sont délicats."
+            },
+            {
+                "name": "Antoine R.",
+                "note": 4,
+                "commentaire": "Kit de qualité, juste les moules un peu fragiles à démouler."
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "title": "Kit DIY - Création de Bijoux Fantaisie",
+        "categorie": "Bijoux",
+        "cover": "/assets/bijoux.png",
+        "img": [
+            "/assets/kit-bijoux.png",
+            "/assets/all-products/perles.jpg",
+            "/assets/all-products/pendentifs.jpg",
+            "/assets/all-products/chaines.jpg",
+            "/assets/all-products/fermoirs-anneaux.jpg",
+            "/assets/all-products/pinces.avif",
+            "/assets/all-products/rangement.jpg"
+        ],
+        "description": "Exprimez votre créativité et réalisez vos propres bijoux grâce à ce kit complet ! Que vous soyez débutant·e ou passionné·e, ce coffret vous permet de concevoir facilement des pièces uniques, à offrir ou à porter fièrement.",
+        "price": "24,90€ (livraison incluse)",
+        "extrainfos": {
+            "kit": {
+                "title": "Contenu du kit",
+                "content": [
+                    {
+                        "name": "Perles variées (plus de 200 pièces)",
+                        "description": "Mélange de perles en verre, bois, métal et acrylique. Tailles et couleurs assorties pour laisser parler votre imagination."
+                    },
+                    {
+                        "name": "Pendentifs & breloques (20 pièces)",
+                        "description": "En métal doré, argenté ou bronze, pour donner du caractère à vos créations."
+                    },
+                    {
+                        "name": "Chaînes & fils",
+                        "description": "Chaîne fine en métal (1 mètre), fil élastique transparent (2 m), cordon ciré (1 m) pour un look plus bohème"
+                    },
+                    {
+                        "name": "Fermoirs et anneaux",
+                        "description": "Mousquetons, anneaux ouverts, crochets d’oreilles… tout ce qu’il faut pour finir vos bijoux proprement."
+                    },
+                    {
+                        "name": "Pinces de bijouterie (x2)",
+                        "description": "Une pince plate et une pince coupante pour manipuler facilement les éléments."
+                    },
+                    {
+                        "name": "Boîte de rangement compartimentée",
+                        "description": "Pratique pour organiser vos perles et accessoires."
+                    },
+                    {
+                        "name": "Notice illustrée & tutoriel",
+                        "description": "Étapes simples pour créer colliers, bracelets, boucles d’oreilles, et plein d’astuces pour personnaliser vos modèles."
+                    }
+                ]
+            },
+            "choices": {
+                "title": "Pourquoi choisir notre kit ?",
+                "content": [
+                    {
+                        "name": "Ultra complet",
+                        "description": "Tout est inclus, vous n’avez besoin de rien d’autre pour commencer."
+                    },
+                    {
+                        "name": "Facile & intuitif",
+                        "description": "Parfait pour les débutants ou pour des ateliers en famille."
+                    },
+                    {
+                        "name": "Personnalisable à l’infini",
+                        "description": "Mixez les styles, couleurs, matières… chaque bijou est unique !"
+                    },
+                    {
+                        "name": "Activité zen & créative",
+                        "description": "Parfait pour se détendre tout en laissant parler son imagination."
+                    }
+                ]
+            },
+            "create": {
+                "title": "Ce que vous pouvez créer",
+                "content": [
+                    "Bracelets tendance",
+                    "Boucles d’oreilles bohèmes",
+                    "Colliers minimalistes ou colorés",
+                    "Grigris de sac, porte-clés, chaînes de lunettes, etc."
+                ]
+            }
+        },
+        "avis": [
+            {
+                "name": "Marie D.",
+                "note": 5,
+                "commentaire": "Kit très complet, les bougies sont magnifiques et sentent bon. La notice est claire."
+            },
+            {
+                "name": "Jean P.",
+                "note": 4,
+                "commentaire": "Très satisfait, juste un peu long pour la fonte de la cire."
+            },
+            {
+                "name": "Sophie L.",
+                "note": 5,
+                "commentaire": "Activité parfaite pour faire avec les enfants, résultat superbe !"
+            },
+            {
+                "name": "Thomas M.",
+                "note": 5,
+                "commentaire": "Cadeau original très apprécié, la qualité des produits est au rendez-vous."
+            },
+            {
+                "name": "Emma K.",
+                "note": 4,
+                "commentaire": "Belle expérience créative, juste besoin de plus de colorants."
+            },
+            {
+                "name": "Lucas B.",
+                "note": 5,
+                "commentaire": "Parfait pour débuter, résultat professionnel avec un peu de patience."
+            },
+            {
+                "name": "Clara N.",
+                "note": 5,
+                "commentaire": "Les bougies durent longtemps et les parfums sont délicats."
+            },
+            {
+                "name": "Antoine R.",
+                "note": 4,
+                "commentaire": "Kit de qualité, juste les moules un peu fragiles à démouler."
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "title": "Kit DIY - Couture Facile & Créative",
+        "categorie": "Couture",
+        "cover": "/assets/couture.png",
+        "img": [
+            "/assets/kit-couture.png",
+            "/assets/all-products/tissus.webp",
+            "/assets/all-products/fil-couture.jpg",
+            "/assets/all-products/aiguilles.jpg",
+            "/assets/all-products/metre.jpg",
+            "/assets/all-products/epingles.jpg",
+            "/assets/all-products/ciseaux.jpg",
+            "/assets/all-products/boutons.jpg",
+            "/assets/all-products/rubans.jpg",
+            "/assets/all-products/elastique.jpg"
+        ],
+        "description": "Apprenez la couture tout en réalisant de jolies créations faites main grâce à ce kit complet. Que vous soyez débutant·e ou que vous ayez envie de vous remettre à coudre, ce coffret est parfait pour démarrer avec plaisir et simplicité.",
+        "price": "27,90€ (livraison incluse)",
+        "extrainfos": {
+            "kit": {
+                "title": "Contenu du kit",
+                "content": [
+                    {
+                        "name": "Tissus pré-découpés (coton et lin)",
+                        "description": "Jolis motifs assortis, parfaits pour réaliser des pochettes, chouchous, lingettes démaquillantes, etc."
+                    },
+                    {
+                        "name": "Fil à coudre (4 couleurs)",
+                        "description": "Bobines assorties pour s’adapter aux tissus du kit."
+                    },
+                    {
+                        "name": "Aiguilles à coudre à la main (x5)",
+                        "description": "Idéales pour les petits projets sans machine."
+                    },
+                    {
+                        "name": "Mini mètre ruban (150 cm)",
+                        "description": "Flexible et précis pour prendre vos mesures."
+                    },
+                    {
+                        "name": "Épingles & épingles de sûreté",
+                        "description": "Pour maintenir vos tissus en place pendant la couture."
+                    },
+                    {
+                        "name": "Petite paire de ciseaux de précision",
+                        "description": "Parfait pour couper le fil ou les petits détails."
+                    },
+                    {
+                        "name": "Boutons, rubans & élastiques",
+                        "description": "De quoi personnaliser vos projets."
+                    },
+                    {
+                        "name": "Notice illustrée & pas à pas",
+                        "description": "Explications claires pour réaliser vos premières créations, même sans aucune expérience."
+                    }
+                ]
+            },
+            "choices": {
+                "title": "Pourquoi choisir notre kit ?",
+                "content": [
+                    {
+                        "name": "Facile et accessible",
+                        "description": "Pensé pour les débutant·e·s, sans stress et avec beaucoup de plaisir."
+                    },
+                    {
+                        "name": "Créatif et utile",
+                        "description": "Vous réalisez de vrais objets pratiques et écolos."
+                    },
+                    {
+                        "name": "Tout-en-un",
+                        "description": "Pas besoin d’acheter autre chose pour commencer."
+                    },
+                    {
+                        "name": "Sans machine ? Aucun problème !",
+                        "description": "Ce kit est aussi adapté à la couture à la main."
+                    }
+                ]
+            },
+            "create": {
+                "title": "Ce que vous pouvez créer",
+                "content": [
+                    "Chouchous",
+                    "Lingettes lavables",
+                    "Pochette à maquillage",
+                    "Trousse zippée (avec option pour machine)",
+                    "Customisation de vêtements simples"
+                ]
+            }
+        },
+        "avis": [
+            {
+                "name": "Marie D.",
+                "note": 5,
+                "commentaire": "Kit très complet, les bougies sont magnifiques et sentent bon. La notice est claire."
+            },
+            {
+                "name": "Jean P.",
+                "note": 4,
+                "commentaire": "Très satisfait, juste un peu long pour la fonte de la cire."
+            },
+            {
+                "name": "Sophie L.",
+                "note": 5,
+                "commentaire": "Activité parfaite pour faire avec les enfants, résultat superbe !"
+            },
+            {
+                "name": "Thomas M.",
+                "note": 5,
+                "commentaire": "Cadeau original très apprécié, la qualité des produits est au rendez-vous."
+            },
+            {
+                "name": "Emma K.",
+                "note": 4,
+                "commentaire": "Belle expérience créative, juste besoin de plus de colorants."
+            },
+            {
+                "name": "Lucas B.",
+                "note": 5,
+                "commentaire": "Parfait pour débuter, résultat professionnel avec un peu de patience."
+            },
+            {
+                "name": "Clara N.",
+                "note": 5,
+                "commentaire": "Les bougies durent longtemps et les parfums sont délicats."
+            },
+            {
+                "name": "Antoine R.",
+                "note": 4,
+                "commentaire": "Kit de qualité, juste les moules un peu fragiles à démouler."
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "title": "Kit DIY - Peinture & Dessin Créatif",
+        "categorie": "Peinture",
+        "cover": "/assets/peintures.png",
+        "img": [
+            "/assets/kit-peinture.png",
+            "/assets/all-products/palette.jpg",
+            "/assets/all-products/crayon.avif",
+            "/assets/all-products/pinceaux.jpg",
+            "/assets/all-products/bloc.jpg",
+            "/assets/all-products/palette-melange.jpg",
+            "/assets/all-products/crayon-gomme.jpg",
+            "/assets/all-products/stylo-noir.jpg"
+        ],
+        "description": "Laissez libre cours à votre imagination avec ce kit complet pour dessiner, peindre et créer sans limites. Que vous débutiez ou que vous souhaitiez enrichir votre matériel créatif, ce coffret est parfait pour explorer l’art à votre rythme.",
+        "price": "26,90€ (livraison incluse)",
+        "extrainfos": {
+            "kit": {
+                "title": "Contenu du kit",
+                "content": [
+                    {
+                        "name": "Palette de peintures (acrylique ou aquarelle)",
+                        "description": "Couleurs vives, lumineuses et faciles à mélanger. Jusqu’à 12 teintes prêtes à l’emploi."
+                    },
+                    {
+                        "name": "Crayons à dessin & esquisse (x6)",
+                        "description": "Différentes duretés (H à B) pour le croquis, l’ombrage et les détails."
+                    },
+                    {
+                        "name": "Pinceaux de qualité (x4)",
+                        "description": "Formes variées : rond, plat, biseauté… adaptés à tous types de traits et textures."
+                    },
+                    {
+                        "name": "Bloc de papier spécial",
+                        "description": "Papier à dessin (A4 ou A5, 20 feuilles) + Papier aquarelle texturé (10 feuilles)"
+                    },
+                    {
+                        "name": "Palette de mélange",
+                        "description": "Pour créer vos propres couleurs facilement."
+                    },
+                    {
+                        "name": "Crayon gomme + taille-crayon",
+                        "description": "Outils indispensables pour des croquis précis."
+                    },
+                    {
+                        "name": "Stylo noir finliner (waterproof)",
+                        "description": "Parfait pour les contours, lettrages ou détails fins."
+                    },
+                    {
+                        "name": "Guide créatif illustré",
+                        "description": "Techniques de base, astuces de mélange, idées de projets (paysages, natures mortes, portraits…)."
+                    }
+                ]
+            },
+            "choices": {
+                "title": "Pourquoi choisir notre kit ?",
+                "content": [
+                    {
+                        "name": "Tout-en-un",
+                        "description": "Idéal pour commencer sans se poser de questions"
+                    },
+                    {
+                        "name": "Inspirant",
+                        "description": "Le guide vous propose des idées et exercices simples à reproduire"
+                    },
+                    {
+                        "name": "Adapté à tous niveaux",
+                        "description": "Débutant ou confirmé, chacun y trouve son bonheur"
+                    },
+                    {
+                        "name": "nameade & pratique",
+                        "description": "Format parfait pour dessiner à la maison ou en extérieur"
+                    }
+                ]
+            },
+            "create": {
+                "title": "Ce que vous pouvez créer",
+                "content": [
+                    "Illustrations & esquisses",
+                    "Peintures expressives ou réalistes",
+                    "Cartes personnalisées",
+                    "Décorations murales",
+                    "Carnets créatifs, journaux illustrés"
+                ]
+            }
+        },
+        "avis": [
+            {
+                "name": "Marie D.",
+                "note": 5,
+                "commentaire": "Kit très complet, les bougies sont magnifiques et sentent bon. La notice est claire."
+            },
+            {
+                "name": "Jean P.",
+                "note": 4,
+                "commentaire": "Très satisfait, juste un peu long pour la fonte de la cire."
+            },
+            {
+                "name": "Sophie L.",
+                "note": 5,
+                "commentaire": "Activité parfaite pour faire avec les enfants, résultat superbe !"
+            },
+            {
+                "name": "Thomas M.",
+                "note": 5,
+                "commentaire": "Cadeau original très apprécié, la qualité des produits est au rendez-vous."
+            },
+            {
+                "name": "Emma K.",
+                "note": 4,
+                "commentaire": "Belle expérience créative, juste besoin de plus de colorants."
+            },
+            {
+                "name": "Lucas B.",
+                "note": 5,
+                "commentaire": "Parfait pour débuter, résultat professionnel avec un peu de patience."
+            },
+            {
+                "name": "Clara N.",
+                "note": 5,
+                "commentaire": "Les bougies durent longtemps et les parfums sont délicats."
+            },
+            {
+                "name": "Antoine R.",
+                "note": 4,
+                "commentaire": "Kit de qualité, juste les moules un peu fragiles à démouler."
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "title": "Kit DIY - Fabrication de Savons Naturels",
+        "categorie": "Savon",
+        "cover": "/assets/savon.png",
+        "img": [
+            "/assets/kit-savon.png",
+            "/assets/all-products/",
+            "/assets/all-products/moule.jpg",
+            "/assets/all-products/colorants-naturels.jpg",
+            "/assets/all-products/fleurs.jpg",
+            "/assets/all-products/spatule.jpg"
+        ],
+        "description": "Créez vos propres savons artisanaux à la maison, simples, jolis et 100% faits main. Ce kit complet vous permet de réaliser des savons uniques, aux parfums doux et aux ingrédients naturels, parfaits pour offrir ou pour vous faire plaisir !",
+        "price": "29,90€ (livraison incluse)",
+        "extrainfos": {
+            "kit": {
+                "title": "Contenu du kit",
+                "content": [
+                    {
+                        "name": "Base de savon naturelle (500g)",
+                        "description": "Glycérine végétale fondante, douce pour la peau et facile à faire fondre (compatible micro-ondes ou bain-marie)."
+                    },
+                    {
+                        "name": "Moules à savon en silicone (x2)",
+                        "description": "Formes variées (fleurs, coeurs, galets…) pour des savons esthétiques et faciles à démouler."
+                    },
+                    {
+                        "name": "Huiles essentielles (2 flacons de 10ml)",
+                        "description": "Parfums au choix (lavande, citron, eucalyptus, etc.) pour une expérience sensorielle unique."
+                    },
+                    {
+                        "name": "Colorants naturels",
+                        "description": "En poudre ou liquide (argile rose, curcuma, spiruline…) pour colorer vos savons de manière douce et saine."
+                    },
+                    {
+                        "name": "Fleurs séchées décoratives",
+                        "description": "Lavande, pétales de rose ou calendula pour décorer ou enrichir vos savons."
+                    },
+                    {
+                        "name": "Spatule en bois",
+                        "description": "Pour mélanger en douceur la base fondue avec vos ajouts."
+                    },
+                    {
+                        "name": "Notice pas à pas illustrée",
+                        "description": "Guide clair et accessible, avec recettes et astuces de personnalisation."
+                    }
+                ]
+            },
+            "choices": {
+                "title": "Pourquoi choisir notre kit ?",
+                "content": [
+                    {
+                        "description": "100% naturel et sans produits chimiques agressifs"
+                    },
+                    {
+                        "description": "Facile à utiliser, même pour les enfants (sous supervision)"
+                    },
+                    {
+                        "description": "Personnalisable à l’infini : couleurs, parfums, formes…"
+                    },
+                    {
+                        "description": "Activité zen, sensorielle et créative"
+                    }
+                ]
+            },
+            "advice": {
+                "title": "Conseils d’utilisation",
+                "content": [
+                    {
+                        "name": "Préparez votre espace de travail",
+                        "description": [
+                            "Protégez la surface avec du papier journal ou une nappe plastique.",
+                            "Prévoyez un récipient en verre ou en inox (pas de plastique pour la fonte au bain-marie)."
+                        ]
+                    },
+                    {
+                        "name": "Faites fondre doucement la base de savon",
+                        "description": [
+                            "Au bain-marie : coupez la base en petits morceaux pour une fonte homogène.",
+                            "Au micro-ondes : par tranches de 10 à 15 secondes, en mélangeant entre chaque."
+                        ]
+                    },
+                    {
+                        "name": "Ajoutez vos ingrédients une fois la base fondue",
+                        "description": [
+                            "Incorporez les colorants, huiles essentielles et décorations une fois hors du feu, avant que la base ne commence à se figer.",
+                            "Mélangez délicatement pour ne pas créer de bulles d'air."
+                        ]
+                    },
+                    {
+                        "name": "Versez dans les moules immédiatement",
+                        "description": [
+                            "Utilisez une spatule pour bien lisser la surface si besoin.",
+                            "Tapotez légèrement les moules sur la table pour éliminer les bulles."
+                        ]
+                    },
+                    {
+                        "name": "Laissez durcir complètement",
+                        "description": [
+                            "Laissez reposer 1 à 2 heures à température ambiante (ou 30 min au frigo pour aller plus vite).",
+                            "Démoulez délicatement une fois les savons bien solides."
+                        ]
+                    },
+                    {
+                        "name": "Laissez reposer 24h avant utilisation",
+                        "description": "Cela permet au savon de durcir davantage et d'optimiser sa durée de vie."
+                    },
+                    {
+                        "name": "Stockez-les dans un endroit sec et aéré",
+                        "description": [
+                            "Évitez l’humidité pour qu’ils ne ramollissent pas.",
+                            "Conservez-les dans du papier kraft ou du tissu si vous souhaitez les offrir"
+                        ]
+                    }
+                ],
+                "adviceBonus": {
+                    "title": "Astuces bonus",
+                    "content": [
+                        "Envie d’exfoliation ? Ajoutez un peu de marc de café, de flocons d’avoine ou de graines de pavot.",
+                        "Savons marbrés ? Versez deux bases colorées légèrement différentes dans le moule et mélangez avec un cure-dent.",
+                        "Customisation max ? Ajoutez une étiquette kraft et un joli ruban pour un cadeau fait main élégant."
+                    ]
+                }
+            }
+        },
+        "avis": [
+            {
+                "name": "Marie D.",
+                "note": 5,
+                "commentaire": "Kit très complet, les bougies sont magnifiques et sentent bon. La notice est claire."
+            },
+            {
+                "name": "Jean P.",
+                "note": 4,
+                "commentaire": "Très satisfait, juste un peu long pour la fonte de la cire."
+            },
+            {
+                "name": "Sophie L.",
+                "note": 5,
+                "commentaire": "Activité parfaite pour faire avec les enfants, résultat superbe !"
+            },
+            {
+                "name": "Thomas M.",
+                "note": 5,
+                "commentaire": "Cadeau original très apprécié, la qualité des produits est au rendez-vous."
+            },
+            {
+                "name": "Emma K.",
+                "note": 4,
+                "commentaire": "Belle expérience créative, juste besoin de plus de colorants."
+            },
+            {
+                "name": "Lucas B.",
+                "note": 5,
+                "commentaire": "Parfait pour débuter, résultat professionnel avec un peu de patience."
+            },
+            {
+                "name": "Clara N.",
+                "note": 5,
+                "commentaire": "Les bougies durent longtemps et les parfums sont délicats."
+            },
+            {
+                "name": "Antoine R.",
+                "note": 4,
+                "commentaire": "Kit de qualité, juste les moules un peu fragiles à démouler."
+            }
+        ]
+    }
+]

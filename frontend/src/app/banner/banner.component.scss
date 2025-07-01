@@ -1,0 +1,201 @@
+// Variables
+$primary-color: #9F733C;
+$background-color: #e0c7b8;
+$white: #fff;
+$dark: #333;
+
+// Mixins
+@mixin hover-transition {
+  transition: all 0.3s ease;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.banner {
+  background-color: $background-color;
+  border-bottom: 2px solid $primary-color;
+  position: fixed;
+
+  .navbar {
+    z-index: 10;
+  }
+
+  .container {
+    background-color: $background-color;
+  }
+
+  .img-logo {
+    height: 60px;
+  }
+
+  // Search styles
+  .search-container {
+    width: 400px;
+    border-color: transparent;
+
+    .search {
+      border-radius: 10px;
+      padding: 10px 15px;
+      width: 100%;
+      border: 1px solid $primary-color;
+      background-color: $white;
+      color: $dark;
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba($primary-color, 0.2);
+      }
+
+      &::-webkit-search-decoration,
+      &::-webkit-search-cancel-button,
+      &::-webkit-search-results-button,
+      &::-webkit-search-results-decoration {
+        display: none;
+      }
+    }
+
+    .btn-search {
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: transparent;
+      border: none;
+      color: $primary-color;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba($primary-color, 0.2);
+      }
+    }
+  }
+
+  // Navigation styles
+  .nav-link {
+    color: $white;
+    @include hover-transition;
+
+    &:focus,
+    &:hover {
+      color: darken($white, 10%);
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $primary-color;
+      outline-offset: 2px;
+    }
+  }
+
+  .icon {
+    color: $primary-color;
+    @include hover-transition;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  // Dropdown menus
+  .kits-collapse,
+  .login-collapse {
+    position: absolute;
+    top: 80px;
+    z-index: 1000;
+    min-width: 250px;
+    background-color: $background-color !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.4s ease-in-out;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .kits-collapse {
+    right: 230px;
+  }
+
+  .login-collapse {
+    right: 0;
+  }
+
+  .hover-primary {
+    color: #9F733C;
+
+    &:hover {
+      color: #333;
+    }
+  }
+
+  // User info styles
+  .user-info {
+    p {
+      color: $white;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    small {
+      color: rgba($white, 0.8);
+    }
+  }
+
+  // Button styles
+  .btn-logout {
+    @include hover-transition;
+    background-color: #f4ece4;
+    border: 1px solid #b59b7a;
+    color: #9F733C;
+    border-radius: 25px;
+    padding: 0.75rem 2rem;
+    font-size: 0.9rem;
+    width: 100%;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #b59b7a;
+      color: white;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $white;
+      outline-offset: 2px;
+    }
+  }
+}
+
+// Animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #9F733C;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.user-info {
+  p {
+    color: #9F733C;
+    font-size: 1.1rem;
+  }
+}

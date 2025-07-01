@@ -1,0 +1,87 @@
+<div class="addresses">
+  <h2 class="mb-4">Adresses de livraison</h2>
+
+  <!-- Utilisation du pipe async pour s'abonner à l'observable -->
+  <div *ngIf="addresses$ | async as addresses; else loading">
+    <div class="address-list mb-4">
+      <div *ngIf="addresses.length === 0">
+        <p>Vous n'avez pas encore enregistré d'adresse.</p>
+      </div>
+
+      <div *ngFor="let address of addresses" class="address-card p-4 border rounded mb-3">
+        <div class="d-flex justify-content-between">
+          <div class="address-details">
+            <p class="mb-2"><strong>{{ address.fullName }}</strong></p>
+            <p class="mb-2">{{ address.street }}</p>
+            <p class="mb-2">{{ address.postalCode }} {{ address.city }}</p>
+            <p class="mb-0">{{ address.country }}</p>
+          </div>
+          <div class="address-actions">
+            <button class="btn btn-edit me-2" (click)="openModal(address)">
+              <i class="bi bi-pencil icon"></i>
+            </button>
+            <button class="btn" (click)="handleDeleteAddress(address._id)">
+              <i class="bi bi-trash icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn-add d-flex align-items-center gap-4" (click)="openModal()">
+      <i class="bi bi-plus-circle icon"></i> Ajouter une adresse
+    </button>
+  </div>
+
+  <!-- Template de chargement -->
+  <ng-template #loading>
+    <div class="text-center py-4">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Chargement...</span>
+      </div>
+    </div>
+  </ng-template>
+
+  <!-- Modale unique pour l'ajout/modification -->
+  <div *ngIf="showModal" class="modal-overlay">
+    <div class="modal-content p-4 rounded shadow">
+      <form #addressForm="ngForm" (ngSubmit)="handleSaveAddress(addressForm)">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2>{{ isEditMode ? 'Modifier l\'adresse' : 'Ajouter une adresse' }}</h2>
+          <button type="button" class="btn-close" (click)="closeModal()"></button>
+        </div>
+
+        <!-- Champs du formulaire -->
+        <div class="mb-3">
+          <label class="form-label">Nom complet</label>
+          <input type="text" class="form-control" name="fullName" [(ngModel)]="addressData.fullName" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Rue</label>
+          <input type="text" class="form-control" name="street" [(ngModel)]="addressData.street" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Code postal</label>
+          <input type="text" class="form-control" name="postalCode" [(ngModel)]="addressData.postalCode" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Ville</label>
+          <input type="text" class="form-control" name="city" [(ngModel)]="addressData.city" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Pays</label>
+          <input type="text" class="form-control" name="country" [(ngModel)]="addressData.country" required>
+        </div>
+
+        <div class="d-flex justify-content-end gap-2 mt-4">
+          <button type="button" class="btn btn-secondary" (click)="closeModal()" [disabled]="isSubmitting">
+            Annuler
+          </button>
+          <button type="submit" class="btn btn-save" [disabled]="isSubmitting || addressForm.invalid">
+            {{ isSubmitting ? 'Enregistrement...' : 'Enregistrer' }}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

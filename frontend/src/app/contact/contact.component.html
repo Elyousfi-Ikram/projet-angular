@@ -1,0 +1,55 @@
+<div id="contact" class="d-flex justify-content-center align-items-center w-100 min-vh-100">
+  <div class="form-container w-100">
+    <h1 class="text-center mt-5">Contact</h1>
+    <hr />
+    <form class="form-contact" (ngSubmit)="handleSubmit($event)" #contactForm="ngForm">
+      <div class="name d-flex justify-content-between">
+        <input
+          type="text"
+          id="nom"
+          name="name"
+          placeholder="NOM Prénom"
+          [(ngModel)]="formData.name"
+          required
+          class="form-control w-48"
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          [(ngModel)]="formData.email"
+          required
+          class="form-control w-48"
+        />
+      </div>
+
+      <input
+        type="text"
+        id="sujet"
+        name="sujet"
+        placeholder="Objet"
+        [(ngModel)]="formData.sujet"
+        required
+        class="form-control mb-3"
+      />
+
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Message"
+        [(ngModel)]="formData.message"
+        required
+        class="form-control mb-3"
+      ></textarea>
+
+      <p *ngIf="messageStatus.text" [class]="'message-status' + messageStatus.type">
+        {{ messageStatus.text }}
+      </p>
+
+      <button type="submit" class="btn-envoyer">
+        <img src="assets/envoyer-un-mail.png" alt="envoyer" class="img-btn" />
+      </button>
+    </form>
+  </div>
+</div>

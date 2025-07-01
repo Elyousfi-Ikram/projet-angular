@@ -1,0 +1,119 @@
+<header class="banner fixed-top">
+  <nav class="navbar navbar-expand">
+    <div class="container d-flex justify-content-between align-items-center w-100 px-0">
+      <!-- Logo -->
+      <a class="navbar-brand text-uppercase fw-bold" routerLink="/" aria-label="Accueil">
+        <img src="assets/logo.png" alt="Logo" class="img-logo" />
+      </a>
+
+      <!-- Barre de recherche -->
+      <div #searchContainer class="search-container position-relative">
+        <form (submit)="onSearchSubmit($event)" class="form-banner d-flex align-items-center" role="search">
+          <label for="search" class="visually-hidden">Rechercher</label>
+          <input type="search" id="search" [(ngModel)]="searchQuery" (input)="onSearchChange()" class="search"
+            placeholder="Rechercher..." name="search" aria-label="Rechercher" />
+          <button class="btn-search" type="submit" aria-label="Lancer la recherche">
+            <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
+          </button>
+        </form>
+
+        <div *ngIf="searchQuery && (searchResults.kits.length > 0 || searchResults.produits.length > 0)"
+          class="search-results position-absolute bg-white p-2 shadow rounded w-100">
+          <div *ngIf="searchResults.kits.length > 0" class="p-3">
+            <h6>Kits</h6>
+            <button *ngFor="let kit of searchResults.kits" (click)="onResultClick('kit', kit.id)"
+              class="btn btn-link text-start d-flex align-items-start gap-2 w-100 text-dark p-2">
+              <img [src]="kit.cover" [alt]="kit.title" class="img-search-result" />
+              <div class="text-start">
+                <div class="fw-bold">{{ kit.title }}</div>
+                <div class="text-muted small"><small><em>{{ kit.price }}</em></small></div>
+              </div>
+            </button>
+          </div>
+
+          <div *ngIf="searchResults.produits.length > 0" class="p-3">
+            <h6>Produits</h6>
+            <button *ngFor="let produit of searchResults.produits" (click)="onResultClick('product', produit.id)"
+              class="btn btn-link text-start d-flex align-items-center gap-2 text-dark py-1 px-2 w-100">
+              <img *ngIf="produit.img" [src]="produit.img" [alt]="produit.products" class="img-search-result" />
+              <div class="d-flex flex-column text-start">
+                <strong>{{ produit.products }}</strong>
+                <small class="text-muted">{{ produit.marque }} — <em>{{ produit.category }}</em></small>
+                <div class="text-muted small"><small><em>{{ produit.price }}</em></small></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Liens de navigation -->
+      <ul class="navbar-nav d-flex justify-content-center gap-4 fs-5" role="navigation">
+        <li class="nav-item"><a class="nav-link" routerLink="/">Accueil</a></li>
+        <li class="nav-item">
+          <button class="nav-link btn-link" (click)="toggleKits()" [attr.aria-expanded]="showKits"
+            aria-controls="kitsMenu">
+            Kits
+          </button>
+        </li>
+        <li class="nav-item"><a class="nav-link" routerLink="/products">Produits</a></li>
+      </ul>
+
+      <!-- Icônes utilisateur -->
+      <div class="d-flex align-items-center gap-3" role="navigation" aria-label="Menu utilisateur">
+        <a *ngIf="isLoggedIn" routerLink="/favoris" aria-label="Mes favoris">
+          <fa-icon [icon]="faHeart" class="icon fs-4"></fa-icon>
+        </a>
+        <button class="nav-link btn-link" (click)="toggleLogin()" [attr.aria-expanded]="showLogin"
+          aria-controls="loginMenu" aria-label="Menu de connexion">
+          <fa-icon [icon]="faUser" class="icon fs-4"></fa-icon>
+        </button>
+        <a routerLink="/panier" class="nav-link position-relative" aria-label="Mon panier">
+          <i class="icon bi bi-bag fs-4"></i>
+        </a>
+      </div>
+
+      <!-- Menu déroulant des Kits -->
+      <div *ngIf="showKits" #kitsContainer id="kitsMenu"
+        class="kits-collapse position-absolute bg-white shadow-sm p-4 mt-2 w-25" role="menu">
+        <div class="collapse-content d-flex flex-column gap-2">
+          <a *ngFor="let kit of displayedKits" [routerLink]="['/kits', kit.id]" (click)="showKits = false"
+            class="text-decoration-none hover-primary pb-1">
+            {{ kit.title }}
+          </a>
+          <hr class="my-2" />
+          <a routerLink="/compose" (click)="showKits = false" class="text-decoration-none hover-primary">Composer votre
+            Kit</a>
+        </div>
+      </div>
+
+      <!-- Login déroulant -->
+      <div *ngIf="showLogin" #loginContainer id="loginMenu"
+        class="login-collapse position-absolute bg-white shadow-sm p-3 mt-2 w-25" role="menu">
+        <ng-container *ngIf="isLoggedIn; else notLoggedIn">
+          <div class="user-info mb-3">
+            <div class="d-flex align-items-start gap-2">
+              <i class="fa-solid fa-circle-user icon fs-4 mt-1"></i>
+              <div class="ms-2">
+                <p class="fw-bold mb-0">{{ user?.name }} {{ user?.prenom }}</p>
+                <em><small class="text-muted">{{ user?.email }}</small></em>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-2 mb-4">
+            <a routerLink="/profil" class="text-decoration-none hover-primary ms-2" (click)="showLogin = false">Profil</a>
+            <a routerLink="/commandes" class="text-decoration-none hover-primary ms-2" (click)="showLogin = false">Commandes</a>
+          </div>
+          <button (click)="handleLogout()" class="btn-logout px-0">Se déconnecter</button>
+        </ng-container>
+        <ng-template #notLoggedIn>
+          <div class="d-flex flex-column align-items-center w-100 gap-3">
+            <a routerLink="/login" class="text-decoration-none hover-primary" (click)="showLogin = false">Se
+              connecter</a>
+            <a routerLink="/signup" class="text-decoration-none hover-primary"
+              (click)="showLogin = false">S'inscrire</a>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+  </nav>
+</header>

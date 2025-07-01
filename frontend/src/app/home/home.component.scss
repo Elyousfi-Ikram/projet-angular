@@ -1,0 +1,101 @@
+#accueil {
+    background: linear-gradient(to bottom, #e0c7b8, #ede5da);
+    padding-bottom: 30px;
+
+    .carousel {
+        position: relative;
+        width: 100%;
+        max-height: 80vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid #9F733C;
+
+        .carousel-image {
+            width: 70%;
+            height: auto;
+            max-height: 80vh;
+            transition: opacity 0.3s ease-in-out;
+
+            &.fade {
+                opacity: 0;
+            }
+        }
+
+        .btn-left,
+        .btn-right {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: transparent;
+            border: none;
+            color: #ede5da;
+            font-size: 50px;
+            z-index: 2;
+            cursor: pointer;
+            background-color: #a87d47;
+            padding: 100% 7%;
+        }
+
+        .btn-left {
+            left: 0px;
+        }
+
+        .btn-right {
+            right: 0px;
+        }
+
+        .carousel-dots {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 2;
+
+            .dot {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: #ccc;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &.active {
+                    background-color: #9F733C;
+                }
+
+                &:hover {
+                    background-color: #b98b55;
+                }
+            }
+        }
+    }
+
+    .span-accueil {
+        font-size: 55px;
+        color: #9F733C;
+        font-family: 'Lucida Sans', 'Lucida Grande', sans-serif;
+    }
+
+    .btn-accueil {
+        border: 3px solid #aa9273;
+        border-radius: 20px;
+        background-color: #ede5da;
+        box-shadow: 0px 0px 20px #9F733C40;
+        font-size: larger;
+
+        .btn-link {
+            text-decoration: none;
+            color: #9F733C;
+            font-weight: bold;
+        }
+    }
+
+    .kits-img:hover {
+        transform: scale(1.04);
+        transition: transform 0.3s ease-in-out;
+    }
+}

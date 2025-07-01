@@ -1,0 +1,27 @@
+<!-- Ce bouton peut être placé dans un autre composant parent pour ouvrir la modal -->
+<!-- <button (click)="openModal()">Afficher la FAQ</button> -->
+
+<!-- <div *ngIf="isModalOpen" class="modal-overlay" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <button class="close-button" (click)="closeModal()">&times;</button>
+    <h2>Foire Aux Questions</h2>
+    
+    <div *ngIf="faqs$ | async as faqs; else loading">
+      <div *ngIf="faqs.length > 0; else noFaqs" class="faq-container">
+        <div *ngFor="let faq of faqs; let i = index" class="faq-item">
+          <div class="faq-question" (click)="toggleAccordion(i)">
+            {{ faq.question }}
+            <span class="arrow">{{ activeIndex === i ? '▲' : '▼' }}</span>
+          </div>
+          <div class="faq-answer" [class.active]="activeIndex === i">
+            <p>{{ faq.answer }}</p>
+          </div>
+        </div>
+      </div>
+      <ng-template #noFaqs><p>Aucune question n'est disponible pour le moment.</p></ng-template>
+    </div>
+
+    <ng-template #loading><p>Chargement de la FAQ...</p></ng-template>
+
+  </div>
+</div> -->

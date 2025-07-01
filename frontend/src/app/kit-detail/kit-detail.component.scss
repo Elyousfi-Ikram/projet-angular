@@ -1,0 +1,125 @@
+.btn-return {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.btn-favoris {
+    border: none;
+    background-color: transparent;
+
+    .icon-add-favoris {
+        font-size: 20px;
+        color: #9F733C;
+    }
+}
+
+.btn-add {
+    background-color: #f4ece4;
+    border: 1px solid #b59b7a;
+    color: #333;
+    border-radius: 25px;
+    padding: 0.75rem 2rem;
+    font-size: 0.9rem;
+    width: 100%;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #b59b7a;
+        color: white;
+    }
+}
+
+.btn-left,
+.btn-right {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    color: #9F733C;
+    cursor: pointer;
+    transform: translateY(-50%);
+    font-size: 30px;
+}
+
+.btn-left {
+    left: 75px !important;
+}
+
+.btn-right {
+    right: 75px !important;
+}
+
+.text-justify {
+    text-align: justify;
+    hyphens: auto;
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 275px;
+
+    button {
+        background-color: #9F733C;
+        opacity: 0.4;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}
+
+.collapse-title,
+hr {
+    border: 2px solid #9F733C;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+
+.card {
+    border: none;
+
+    .card-header {
+        background-color: transparent;
+        border-bottom: 2px solid #9F733C;
+        padding: 10px;
+
+        .btn-collapse {
+            text-decoration: none;
+            color: #9F733C;
+        }
+
+        .fa-chevron-down {
+            color: #9F733C;
+        }
+    }
+}
+
+h4 {
+    color: #9F733C;
+    font-weight: bold;
+}
+
+.review-card {
+    width: 20%;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #aa9273;
+}

@@ -1,0 +1,70 @@
+.profil-container {
+  display: flex;
+  min-height: calc(100vh - 80px); // Ajuster en fonction de la hauteur de votre header
+}
+
+.sidebar {
+  width: 280px;
+  background-color: #f4f4f4;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-greeting h3 {
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s, color 0.3s;
+
+  &.active {
+    background-color: #9F733C;
+    color: white;
+  }
+
+  &:hover:not(.active) {
+    background-color: #e0e0e0;
+  }
+}
+
+.logout-btn {
+  margin-top: auto; // Pousse le bouton en bas
+  padding: 0.8rem;
+  border: none;
+  background-color: #d9534f;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #c9302c;
+  }
+}
+
+.content {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.notification {
+  background-color: #dff0d8;
+  color: #3c763d;
+  border: 1px solid #d6e9c6;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}

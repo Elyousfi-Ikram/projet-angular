@@ -1,0 +1,18 @@
+[
+  {
+    "question": "Comment puis-je suivre ma commande ?",
+    "answer": "Une fois votre commande expédiée, vous recevrez un e-mail de confirmation contenant un numéro de suivi. Vous pouvez utiliser ce numéro sur le site du transporteur pour suivre votre colis."
+  },
+  {
+    "question": "Quelle est votre politique de retour ?",
+    "answer": "Nous acceptons les retours dans les 30 jours suivant la réception de votre commande. Les articles doivent être dans leur état d'origine, non utilisés et avec toutes les étiquettes attachées. Veuillez consulter notre page 'Retours' pour plus de détails."
+  },
+  {
+    "question": "Proposez-vous la livraison internationale ?",
+    "answer": "Oui, nous livrons dans de nombreux pays à travers le monde. Les frais de port et les délais de livraison varient en fonction de la destination. Vous pouvez voir les options de livraison lors du paiement."
+  },
+  {
+    "question": "Comment puis-je modifier ou annuler ma commande ?",
+    "answer": "Si vous devez modifier ou annuler votre commande, veuillez nous contacter dès que possible. Nous ferons de notre mieux pour répondre à votre demande, mais si la commande a déjà été traitée, nous ne pourrons peut-être pas la modifier."
+  }
+]

@@ -1,0 +1,462 @@
+// ========== Container ==========
+.container {
+    padding: 2rem;
+
+    // Bouton retour
+    .btn-return {
+        background: none;
+        border: none;
+        color: #333;
+        font-size: 0.9rem;
+        padding: 0;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: color 0.3s ease;
+
+        i {
+            font-size: 0.8rem;
+        }
+
+        &:hover {
+            color: #666;
+        }
+    }
+
+    // Image produit
+    .img_product {
+        width: 100%;
+        max-height: 400px;
+        object-fit: contain;
+        margin-bottom: 2rem;
+    }
+
+    // Titres et textes
+    h1 {
+        font-size: 1.75rem;
+        color: #333;
+        margin-bottom: 0.5rem;
+    }
+
+    .text-muted {
+        color: #666 !important;
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    // Boutons favoris et ajout panier
+    .btn-favoris {
+        border: none;
+        background-color: transparent;
+
+        .icon-add-favoris {
+            font-size: 20px;
+            color: #9F733C;
+        }
+    }
+
+    .btn-add {
+        background-color: #f4ece4;
+        border: 1px solid #b59b7a;
+        color: #333;
+        border-radius: 25px;
+        padding: 0.75rem 2rem;
+        font-size: 0.9rem;
+        width: 100%;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: #b59b7a;
+            color: white;
+        }
+    }
+
+    // Sélecteurs et groupes d'entrée
+    .form-select {
+        border: 1px solid #ddd;
+        border-radius: 25px;
+        padding: 0.575rem 1.5rem;
+        margin-bottom: 1.5rem;
+        background-color: #fff;
+        color: #333;
+        font-size: 0.9rem;
+
+        &:focus {
+            border-color: #b59b7a;
+            box-shadow: none;
+        }
+    }
+
+    .input-group {
+        border: 1px solid #ddd;
+        border-radius: 25px;
+        overflow: hidden;
+        width: fit-content;
+
+        .btn {
+            border: none;
+            background: none;
+            color: #333;
+            padding: 0.5rem 1rem;
+
+            &:hover {
+                background-color: #f5f5f5;
+            }
+        }
+
+        .input-group-text {
+            border: none;
+            background: none;
+            padding: 0.5rem 1.5rem;
+            min-width: 3rem;
+            text-align: center;
+        }
+    }
+
+    // Alertes
+    .alert {
+        background-color: #f4ece4;
+        border: 1px solid #b59b7a;
+        color: #333;
+        border-radius: 25px;
+        padding: 0.75rem 2rem;
+    }
+
+    // Accordéon
+    .accordion {
+        margin-top: 3rem;
+
+        .accordion-item {
+            border: none;
+            border-bottom: 1px solid #ddd;
+
+            .accordion-button {
+                background: none;
+                padding: 1.5rem 0;
+                font-size: 1rem;
+                color: #333;
+
+                &:not(.collapsed) {
+                    color: #333;
+                    background: none;
+                    box-shadow: none;
+                }
+
+                &:focus {
+                    box-shadow: none;
+                }
+
+                &::after {
+                    background-size: 0.7rem;
+                }
+            }
+
+            .accordion-body {
+                padding: 1rem 0;
+                color: #666;
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    // Section avis
+    .reviews-section {
+        margin-top: 3rem;
+
+        h2 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+
+            .card-body {
+                padding: 1.5rem;
+
+                .avatar {
+                    background-color: #b59b7a;
+                    font-size: 0.9rem;
+                }
+
+                .fw-bold {
+                    font-size: 0.9rem;
+                    color: #333;
+                }
+
+                .text-warning {
+                    font-size: 0.8rem;
+                    margin-top: 0.25rem;
+
+                    .fa-star {
+                        color: #b59b7a;
+                    }
+                }
+
+                .card-text {
+                    font-size: 0.9rem;
+                    color: #666;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
+
+// ========== Quantity Controls ==========
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    width: fit-content;
+
+    .quantity-btn {
+        background: none;
+        border: 1px solid #9F733C;
+        color: #9F733C;
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .quantity-display {
+        min-width: 40px;
+        text-align: center;
+        font-size: 1.1rem;
+        color: #333;
+    }
+}
+
+// ========== Quantity Selector Outside Container ==========
+.quantity-selector {
+    position: relative;
+
+    select {
+        width: 100%;
+        padding: 12px 15px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: white;
+        border: 1px solid #9F733C;
+        border-radius: 4px;
+        font-size: 16px;
+        color: #333;
+        cursor: pointer;
+        position: relative;
+
+        &:focus {
+            outline: none;
+            border-color: #9F733C;
+        }
+
+        option {
+            padding: 12px 15px;
+            background-color: white;
+            color: #333;
+            border-bottom: 1px solid #e0e0e0;
+        }
+    }
+}
+
+// ========== Utilitaires et styles globaux ==========
+.user-avatar {
+    background-color: #aa9273;
+}
+
+.accordion .accordion-item {
+    border: none;
+    border-bottom: 1px solid #9F733C;
+}
+
+.form-select option:checked {
+    background-color: #f5f5f5;
+}
+
+select option {
+    background-color: white;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+}
+
+select:focus {
+    outline: none !important;
+    border-color: #9F733C !important;
+    box-shadow: none !important;
+}
+
+option:focus {
+    background-color: #f5f5f5 !important;
+}
+
+// ========== Alert ==========
+.alert {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10000;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    animation: fadeIn 0.3s ease;
+}
+
+// ========== Animations ==========
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+// ========== Listes et classes utilitaires ==========
+ul,
+.list-group {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.btn-return {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.btn-favoris {
+    border: none;
+    background-color: transparent;
+
+    .icon-add-favoris {
+        font-size: 20px;
+        color: #9F733C;
+    }
+}
+
+.btn-add {
+    background-color: #f4ece4;
+    border: 1px solid #b59b7a;
+    color: #333;
+    border-radius: 25px;
+    padding: 0.75rem 2rem;
+    font-size: 0.9rem;
+    width: 100%;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #b59b7a;
+        color: white;
+    }
+}
+
+.btn-left,
+.btn-right {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    color: #9F733C;
+    cursor: pointer;
+    transform: translateY(-50%);
+    font-size: 30px;
+}
+
+.btn-left {
+    left: 75px !important;
+}
+
+.btn-right {
+    right: 75px !important;
+}
+
+.text-justify {
+    text-align: justify;
+    hyphens: auto;
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 275px;
+
+    button {
+        background-color: #9F733C;
+        opacity: 0.4;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}
+
+.collapse-title,
+hr {
+    border: 2px solid #9F733C;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+.card {
+    border: none;
+
+    .card-header {
+        background-color: transparent;
+        border-bottom: 2px solid #9F733C;
+        padding: 10px;
+
+        .btn-collapse {
+            text-decoration: none;
+            color: #9F733C;
+        }
+
+        .fa-chevron-down {
+            color: #9F733C;
+        }
+    }
+}
+
+h4 {
+    color: #9F733C;
+    font-weight: bold;
+}
+
+.review-card {
+    width: 20%;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #aa9273;
+}

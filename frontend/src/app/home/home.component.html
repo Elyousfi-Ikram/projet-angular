@@ -1,0 +1,50 @@
+<section id="accueil">
+  <!-- Carrousel avec boutons et image -->
+  <div class="carousel">
+    <button class="btn-left" (click)="prevImage()" aria-label="Précédent">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <img [class.fade]="fade" class="carousel-image" [src]="images[currentIndex]" alt="Kit de Pâques" />
+
+    <button class="btn-right" (click)="nextImage()" aria-label="Suivant">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+
+    <!-- Indicateurs de navigation -->
+    <div class="carousel-dots">
+      <div *ngFor="let image of images; let i = index" (click)="setCurrentIndex(i)" [class.active]="currentIndex === i"
+        class="dot">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Première ligne -->
+    <div class="row py-4 d-flex justify-content-center align-items-center">
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+        <p class="span-accueil text-center">Kits DIY pour projets créatifs</p>
+        <button class="btn-accueil py-3 px-4 my-3">
+          <a routerLink="/products" class="btn-link py-4 px-4 my-3">Voir tous les produits</a>
+        </button>
+      </div>
+      <div class="col-md-6">
+        <div class="kits-img d-block text-center" (click)="goToKit(mainImage.id)">
+          <img [src]="mainImage.cover" [alt]="mainImage.title" class="img-fluid rounded shadow-sm" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Deuxième ligne -->
+    <div class="row g-3">
+      <div class="col-6" *ngFor="let kit of displayedKits.slice(1)">
+        <div class="kits-img d-block text-center" (click)="goToKit(kit.id)">
+          <img [src]="kit.cover" [alt]="kit.title" class="img-fluid shadow-sm rounded-3" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section Contact -->
+  <app-contact></app-contact>
+</section>

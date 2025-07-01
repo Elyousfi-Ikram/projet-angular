@@ -1,0 +1,63 @@
+<div class="personal-info" *ngIf="userData">
+  <h2 class="mb-4">Informations personnelles</h2>
+
+  <!-- User Info Display -->
+  <div class="info-card p-4 border rounded mb-3">
+    <div class="d-flex justify-content-between align-items-start mb-3">
+      <div>
+        <h3 class="h5 mb-2">Informations de contact</h3>
+        <div class="info-details">
+          <p class="mb-1">Prénom : {{ userData.prenom }}</p>
+          <p class="mb-1">Nom : {{ userData.name }}</p>
+          <p class="mb-1">Email : {{ userData.email }}</p>
+          <p class="mb-0">Téléphone : {{ userData.phone || 'Non renseigné' }}</p>
+        </div>
+      </div>
+      <button class="btn btn-edit" (click)="openModal('edit')">
+        <i class="bi bi-pencil icon"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Delete Account Section -->
+  <div class="info-card p-4 border rounded bg-light">
+    <h3 class="h5">Supprimer mon compte</h3>
+    <p class="text-muted">La suppression de votre compte est une action permanente et irréversible.</p>
+    <button class="btn btn-danger" (click)="handleDeleteAccount()">Supprimer mon compte</button>
+  </div>
+</div>
+
+<!-- Edit Profile Modal -->
+<div *ngIf="activeModal === 'edit'" class="modal-overlay">
+  <div class="modal-content p-4 rounded shadow">
+    <form #editForm="ngForm" (ngSubmit)="handleUpdateUser(editForm)">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Modifier le profil</h2>
+        <button type="button" class="btn-close" (click)="closeModal()"></button>
+      </div>
+      <div class="mb-3">
+        <label for="prenom" class="form-label">Prénom</label>
+        <input type="text" id="prenom" name="prenom" class="form-control" [(ngModel)]="editData.prenom" required #prenom="ngModel">
+        <div *ngIf="prenom.invalid && (prenom.dirty || prenom.touched)" class="text-danger">Le prénom est requis.</div>
+      </div>
+      <div class="mb-3">
+        <label for="name" class="form-label">Nom</label>
+        <input type="text" id="name" name="name" class="form-control" [(ngModel)]="editData.name" required #name="ngModel">
+        <div *ngIf="name.invalid && (name.dirty || name.touched)" class="text-danger">Le nom est requis.</div>
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Téléphone</label>
+        <input type="tel" id="phone" name="phone" class="form-control" [(ngModel)]="editData.phone">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" id="email" name="email" class="form-control" [value]="editData.email" disabled>
+        <small class="text-muted">L'e-mail ne peut pas être modifié.</small>
+      </div>
+      <div class="d-flex justify-content-end gap-2">
+        <button type="button" class="btn btn-secondary" (click)="closeModal()">Annuler</button>
+        <button type="submit" class="btn btn-save" [disabled]="editForm.invalid">Enregistrer</button>
+      </div>
+    </form>
+  </div>
+</div>
